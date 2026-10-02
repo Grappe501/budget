@@ -2438,3 +2438,31 @@ Predictions should participate in conservative/expected/upside or other appropri
 
 ### Product principle
 **A good budget should remember what tends to happen before the household has to remember it.** Lewis should use history to reduce financial surprises without pretending predictions are facts.
+
+
+## 58. Discovery Decision 047 — Configurable Household Approval Policy; Independent Owners for Steve + Kelly
+
+### Separate product capability from household policy
+Budget should be architected to support configurable approval rules for high-impact household financial decisions, but it must not assume that every household wants joint approval.
+
+### Steve + Kelly household policy
+For the initial household alpha, authorized **Owners have independent authority**. Either Steve or Kelly may make an authorized household financial decision without requiring approval from the other owner.
+
+This applies to product-level decision workflows subject to any other safeguards already defined. It does not bypass external financial-institution authorization requirements or security controls.
+
+### Commercial/future option
+Future households should be able to choose an approval policy appropriate to them, potentially including:
+- independent owner authority;
+- dual-owner approval for selected high-impact actions;
+- configurable thresholds/action classes requiring joint approval.
+
+The exact commercial settings UI can be specified later.
+
+### Auditability remains universal
+Even when no second approval is required, Budget should preserve who initiated/confirmed a material decision, when it occurred, what changed, the prior/new state and relevant Lewis analysis/assumptions.
+
+### Lewis behavior
+Lewis should follow the household's configured governance policy rather than imposing relationship assumptions. It should not treat independent authority as suspicious or joint approval as inherently superior.
+
+### Product principle
+**Budget models the household's agreed financial governance; it does not dictate it.** Security, provenance and auditability remain strong regardless of approval style.
