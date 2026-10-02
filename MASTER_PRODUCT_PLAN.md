@@ -611,3 +611,37 @@ A core product outcome is **reduced financial cognitive load**. The household sh
 Budget should recalculate recommendations when meaningful inputs change, while avoiding noisy or arbitrary advice. New transactions, income, paid-off obligations, changed balances, upcoming bills, and user scenario changes can update the recommended next financial move.
 
 This creates a core experience analogous to a financial command board: **current position → today's available capacity → upcoming risks → trajectory → recommended next move → scenario controls.**
+
+
+## 17. Discovery Decision 007 — Physical Reserve Account and Debt-First Product Sequence
+
+### Reserve destination
+The household intends to establish a dedicated savings account for cash reserves. Protected reserves should therefore ultimately represent **real funds held separately from ordinary spending cash**, not merely a virtual category inside checking.
+
+### Monthly reserve sweep
+Budget should calculate the household's designated reserve contribution and support a monthly reserve sweep into the dedicated savings account.
+
+The initial household policy remains 10% of applicable inflows, subject to later definition of which inflow types qualify and how irregular income is handled. The system should show:
+- reserve contribution accrued/owed for the period;
+- amount actually transferred;
+- reserve account balance when available;
+- any shortfall between policy and actual transfer;
+- progress toward resilience/runway targets.
+
+### Calculation versus money movement
+Reserve calculation and reserve transfer execution are separate capabilities.
+
+Early versions may calculate and instruct the user what to transfer. Direct initiation of bank transfers is a later gated financial-action capability requiring an appropriate financial integration, explicit authorization, strong authentication/security, transaction confirmation, reconciliation, failure/retry handling, revocation controls and an audit trail.
+
+No AI recommendation should independently move household money without the authorization model established for that action.
+
+### Product sequencing
+The household's desired financial sequence is now explicitly:
+**1. Gain visibility and cash-flow control → 2. establish/protect reserves → 3. control and eliminate debt → 4. build wealth through investing.**
+
+This is a sequencing priority rather than a claim that every dollar must follow an inflexible rule. The scenario engine should still identify material tradeoffs when liquidity, very high-cost debt or other circumstances make an alternative allocation worth considering.
+
+### Investment layer is Phase Two
+Investment planning/wealth deployment will become a major second-stage component after the household's debt-management foundation is functioning. The current product-discovery/build effort should architect clean extension points for investment assets and future wealth strategy without allowing investment functionality to distract from the immediate debt/cash-flow mission.
+
+The future investment layer should be treated as a distinct planning and, if ever enabled, action domain with its own suitability, risk, data and authorization requirements.
