@@ -2336,3 +2336,54 @@ Because longitudinal financial/behavioral data is especially sensitive, future c
 
 ### Product principle
 **Time turns transactions into intelligence.** Budget should help the household learn from its own financial history so that better behavior compounds alongside better cash flow.
+
+
+## 56. Discovery Decision 045 — Lewis Financial Experiments and Measured Behavior Change
+
+### Lewis should test advice, not merely prescribe it
+When longitudinal household evidence suggests a potentially useful behavior change, Lewis should be able to propose a **temporary Financial Experiment** rather than immediately rewriting the permanent household budget.
+
+The household must explicitly accept an experiment before it becomes an active target.
+
+### Experiment structure
+A Financial Experiment should record, where applicable:
+- the observed household pattern/evidence that prompted it;
+- Lewis's hypothesis in plain language;
+- the behavior/category being tested;
+- baseline period/metric;
+- temporary target or rule;
+- start/end dates;
+- expected financial effect;
+- actual results;
+- relevant confounding/context notes;
+- household feedback on difficulty/quality of life;
+- final outcome: adopt, modify, extend, abandon or inconclusive.
+
+### Example
+Lewis might observe that lower restaurant spending during comparable pay periods is associated with stronger end-of-period cash positions and propose:
+'Try a $120 restaurant target for the next four weeks. We'll measure whether it actually improves available cash without making the plan unrealistic.'
+
+The example target is illustrative; Lewis must ground real experiments in actual household data.
+
+### Experiments are reversible
+An experiment is not a permanent budget rule. The household can stop or modify it. Ending an experiment should not be framed as failure; the result itself is useful evidence.
+
+### Measure more than dollars
+Where relevant, Lewis should consider both financial outcomes and user-reported practicality. A change that mathematically saves money but is consistently unrealistic may be a poor permanent rule.
+
+### Guard against false conclusions
+Lewis should account for obvious confounders where possible (unusual income, travel, emergency expense, seasonal event, changed household circumstances) and avoid claiming causation merely because a metric changed during the experiment.
+
+Small samples should be described cautiously.
+
+### Promote successful experiments deliberately
+At completion, Lewis should summarize:
+**what we tried → what happened → how confident we are → what it changed financially → whether I recommend adopting/modifying/dropping it.**
+
+Only after household approval should a successful experiment become a persistent budget target, learned preference or ongoing financial rule.
+
+### Experiment history becomes intelligence
+Past experiments and outcomes should become part of the Household Financial Life Record. Lewis should avoid repeatedly recommending approaches that the household has already tested unsuccessfully unless circumstances materially changed.
+
+### Product principle
+**Budget should learn with the household, not dictate to it.** Behavioral improvement should be evidence-seeking, measurable, reversible and increasingly personalized over time.
