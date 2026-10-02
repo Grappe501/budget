@@ -1769,3 +1769,16 @@ A household member should be able to open Budget on a phone and understand the c
 
 ### Product principle
 **Lewis tells you what matters; the dashboard shows you where you stand; drill-down shows you why.**
+
+
+## 44. Discovery Clarification — Daily Safe-to-Spend Is Already a Core Requirement
+
+### Confirmed, not a new discovery decision
+The household wants a prominent daily **safe-to-spend / true-available** number. This requirement was already established by earlier decisions on the Daily Financial Companion and True Available Cash and is reaffirmed here without creating a separate competing financial concept.
+
+The value should answer, in plain language, how much money the household can safely use now while preserving protected reserves, required obligations and expected normal/necessary spending through the relevant next-income horizon.
+
+It should update as real financial conditions change and remain drillable into the calculation and assumptions underneath it.
+
+### Discovery-process correction
+Future discovery questions should be checked against the complete existing decision record before being asked. Settled concepts should be synthesized into the specification rather than repeatedly re-interviewed. The remaining discovery phase should focus only on unresolved decisions that materially affect Budget 1.0 architecture, behavior, security, onboarding or UX, then transition into specification and build planning.
