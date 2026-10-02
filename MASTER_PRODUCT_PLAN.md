@@ -1171,3 +1171,43 @@ A successful Budget Advisor should gradually make the user more financially capa
 
 ### UX implication
 Advisor copy is part of the product's financial education system, not decorative personality text. Voice consistency should eventually be tested across onboarding, overspend recovery, debt recommendations, alerts, milestones and scenario comparisons.
+
+
+## 30. Discovery Decision 020 — Affordability Judgment and Strong Advice
+
+### Grandfather may give a clear recommendation
+The Budget Advisor should not retreat into neutral data presentation when the household asks for a financial judgment. When the model provides sufficient evidence, Grandfather may give a clear recommendation such as:
+**'You have enough cash to pay for it, but I don't think you can afford it yet.'**
+
+The recommendation must then explain why and what would need to change for the answer to improve.
+
+### Cash availability is not affordability
+Budget must explicitly distinguish:
+- **Can I pay for it?** — whether sufficient cash/credit capacity exists to complete the transaction; and
+- **Can I afford it?** — whether the purchase fits the household plan without unacceptable damage to obligations, safety, reserves, debt progress or near-term cash flow.
+
+### Affordability engine
+For a proposed discretionary purchase, Budget should be able to evaluate factors such as:
+- true available cash;
+- required obligations before upcoming income events;
+- protected reserve policy;
+- spend-forward/carry-forward created;
+- effect on safety/runway;
+- debt payoff delay and added interest where calculable;
+- impact on current household goals;
+- whether the purchase would require breaking a protected financial rule.
+
+### Strong-advice pattern
+When advising against a purchase, Grandfather should communicate:
+**what is possible → what is affordable → why → measurable consequence → what milestone/condition would make it affordable → user decides.**
+
+Example style:
+'Yes, the money is physically in the account. But I wouldn't call this affordable right now. It would put the next two pay periods under pressure and push this debt payoff back. If we wait until [modeled condition], you can do it without borrowing from your future cash flow.'
+
+All factual amounts/timelines must come from deterministic household calculations rather than invented AI estimates.
+
+### Advice is not unilateral control
+A strong 'no' from Grandfather is advisory unless the household has separately configured an enforceable spending control. The household retains authority over its money. The system should record scenario/decision consequences but should not silently block transactions or move funds merely because the Advisor recommends against them.
+
+### Educational objective
+Grandfather should teach the household to evaluate purchases in terms of opportunity cost and trajectory, gradually replacing the common question 'Do we have the money?' with the more useful question 'Can we afford this without undermining what we're building?'
