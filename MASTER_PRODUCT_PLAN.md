@@ -689,3 +689,59 @@ The daily command view should make the hierarchy obvious:
 **Bank cash → protected money → committed/needed before payday → TRUE AVAILABLE → projected payday-end position.**
 
 The raw bank balance remains visible for reconciliation, but it should never be presented as synonymous with money that is safe to spend.
+
+
+## 19. Discovery Decision 009 — Progressive Detail, Receipt Intelligence and Low-Cost AI Economics
+
+### Two-level spending experience
+Budget must work well at two levels simultaneously:
+1. **Simple transaction level:** a bank transaction can remain a single household/category expense with minimal user effort.
+2. **Optional item level:** users who want deeper insight can provide a receipt and allow Budget to reconcile and split the purchase into detailed categories.
+
+Detailed bookkeeping must be optional. A household should receive substantial value without photographing every receipt.
+
+### Receipt capture workflow
+A future receipt workflow should allow a user to upload/capture a receipt image (including common image formats such as JPEG) and then:
+- extract merchant, date, totals, tax and line items where reliably available;
+- propose a match to an imported bank/card transaction;
+- propose item-level categories;
+- flag uncertainty or mismatches;
+- let the user quickly confirm/correct the reconciliation;
+- preserve the original receipt/source evidence;
+- roll item-level categories back up into simple household views.
+
+Receipt extraction must not silently replace authoritative bank transaction amounts. Differences such as tips, pending authorizations, discounts, tax or imperfect extraction need explicit reconciliation behavior.
+
+### Smallest useful category principle
+The data model should permit granular subcategories and item-level classification while the interface defaults to simplicity. Users can drill from household spending → category → subcategory → merchant/transaction → receipt → individual item where data exists.
+
+Granularity should remain useful rather than generating meaningless taxonomy. Household-specific categorization rules should improve over time from confirmed classifications.
+
+### Progressive disclosure UX
+The commercial experience should avoid turning personal finance into accounting work. The default path should require very little intervention; advanced detail appears when the user asks for it or when a financially important uncertainty requires confirmation.
+
+### AI cost doctrine
+A core commercial requirement is **extremely low variable AI cost per household**. The product should not send every deterministic calculation or previously solved classification to an expensive model.
+
+Architecture should favor, where appropriate:
+- deterministic arithmetic/rules for financial calculations;
+- local/application-side normalization and caching;
+- reusable household merchant/category rules;
+- confidence thresholds that avoid repeated AI calls;
+- batching when appropriate;
+- low-cost model tiers for routine classification/extraction;
+- escalation to stronger models only when the expected value justifies it;
+- storing structured results so identical work is not repeatedly purchased;
+- usage/cost telemetry by AI feature.
+
+AI must be used where it materially improves comprehension, classification, explanation or planning—not as a substitute for ordinary software logic.
+
+### Unit-economics target
+The founder wants a mass-market price point potentially in the range of only a few dollars per household/user per month, with an aspirational gross-margin target around **75% after variable AI/processing costs**. These are discovery targets, not validated economics.
+
+Before pricing is finalized, Budget must measure actual costs including AI inference, receipt/document extraction, financial-data connectivity, hosting/storage, payment processing, support and other variable services. Gross margin should be calculated from observed production usage rather than assumed.
+
+### Mission and growth objective
+The intended consumer value proposition is broader than expense tracking: help ordinary households understand where their money goes, reduce financial anxiety, get control of debt, build reserves, learn financial decision-making and ultimately progress toward wealth accumulation.
+
+The product should be designed for very low onboarding friction and strong word-of-mouth potential. Product quality and measurable household value—not artificially high AI usage—should drive retention and growth.
