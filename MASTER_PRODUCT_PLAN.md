@@ -903,3 +903,39 @@ The application now has a clear household journey:
 **Understand → Control → Protect → Eliminate Debt → Become Resilient → Build Wealth.**
 
 This journey should eventually be visible in the product so users understand not only today's numbers but the financial stage they are working toward next.
+
+
+## 24. Discovery Decision 014 — Budget 1.0 Hard Scope Boundary and Post-Consumer-Debt Optionality
+
+### Hard stop before Wealth Builder
+The current product cycle is **Budget 1.0: household budgeting, cash-flow control, reserves and debt management**. Detailed Wealth Builder/investment functionality is explicitly out of scope for this build.
+
+Budget 1.0 may preserve data-model/architecture extension points and show that wealth building is a future stage, but it should not spend product-development effort designing investment portfolios, brokerage execution, asset allocation or other Wealth Builder mechanics yet.
+
+### Why the boundary exists
+The immediate objective is to get Budget into real household use quickly enough to learn from actual behavior, then refine it until the experience is exceptionally simple, trustworthy and valuable. Household alpha usage is part of product development, not an afterthought.
+
+### Post-consumer-debt flexibility
+Budget must not permanently encode one universal rule for what happens after consumer debt is eliminated. Future conditions may differ substantially depending on how quickly the household progresses, interest rates, mortgage terms, income, reserve position and other circumstances.
+
+At that future decision point, Budget should be capable of comparing options such as:
+- accelerating the farm mortgage toward pure zero debt;
+- beginning Wealth Builder allocations while continuing scheduled mortgage payments;
+- splitting surplus between mortgage acceleration and Wealth Builder;
+- other household-approved scenarios.
+
+The system should compare consequences rather than selecting a permanent philosophy years in advance.
+
+### Long-term household aspiration
+**Pure zero debt** remains an important household goal, including eventual ownership of the farm free of mortgage debt. That aspiration should be trackable without forcing every surplus dollar toward the mortgage when another strategy is intentionally selected.
+
+### Product-value ambition
+The commercial ambition is to create a consumer experience with very high perceived utility and polish while maintaining a mass-market price target in the low-single-digit dollars per month range where economics permit. The founder's working target is approximately $3–$5/month, subject to later validation against real infrastructure, financial-data, AI, payment-processing and support costs.
+
+Pricing claims and comparisons to higher-priced products should not be treated as validated until market research and production cost measurements are completed.
+
+### Immediate build priority
+Before expanding scope, Budget 1.0 should become excellent at the core loop:
+**ingest reality → understand the household → calculate true available cash → protect reserves → anticipate obligations → guide daily spending → recover from deviations → optimize debt → explain every recommendation → learn from household corrections.**
+
+The household should then use this system in real life, generating the evidence needed for subsequent UX hardening and eventual commercial product decisions.
