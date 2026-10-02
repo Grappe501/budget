@@ -1292,3 +1292,40 @@ A candidate interaction is:
 
 ### Product principle
 Budget is optimizing for a financially sustainable life, not maximum deprivation. The system should help users distinguish intentional, affordable enjoyment from spending that quietly undermines their goals.
+
+
+## 33. Discovery Decision 023 — Cash Wallet and Voice-First Quick Capture
+
+### Cash withdrawal model
+When Budget detects a cash withdrawal, it should be able to represent that money as an **unallocated Cash Wallet** rather than forcing the entire withdrawal into a final spending category immediately.
+
+The bank transaction remains the authoritative record that cash left the bank. Subsequent cash-spending entries explain how that withdrawn cash was used and reduce the unallocated Cash Wallet balance; they must not create duplicate bank outflows.
+
+### After-the-fact reconciliation
+Users should be able to explain cash spending later. Budget should support partial allocation over time—for example, allocating part of a withdrawal today while leaving the remainder as cash still held/unexplained.
+
+### Voice-first quick capture
+The eventual mobile experience should make voice a primary low-friction input method. A user should be able to open Budget and say a short natural-language statement such as:
+'I used $100 of my cash for [purpose].'
+
+Budget should parse the statement into a proposed structured entry, identify the likely cash source/wallet where possible, propose the category and attribution, and request clarification only when materially ambiguous.
+
+### Confirmation and auditability
+Voice interpretation is not authoritative merely because AI parsed it. Before committing consequential or ambiguous changes, the interface should show the interpreted amount/category/source in a quick confirmation flow. The resulting structured record should preserve enough provenance to show that it originated from user-provided voice/text input.
+
+### Broader conversational capture
+The same interaction model should eventually support quick household updates such as:
+- explaining a transaction;
+- correcting a category;
+- identifying a merchant;
+- noting who a purchase was for;
+- adding context to a receipt;
+- recording a cash purchase;
+- updating a known bill fact;
+- asking Grandfather a financial question.
+
+### Simplicity doctrine
+The household should not need to navigate accounting forms for routine corrections. The product should translate ordinary human language into proposed structured financial data while keeping the user in control of uncertain interpretations.
+
+### Mobile architecture implication
+Although the first development environment is local/desktop-oriented, Budget 1.0 architecture and interaction design should anticipate a phone-friendly companion experience. Voice capture must be treated as an input channel into the same underlying financial domain model, not as a separate ledger.
