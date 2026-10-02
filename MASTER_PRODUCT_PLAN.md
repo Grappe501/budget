@@ -1078,3 +1078,50 @@ The dashboard can exist immediately after import, but it should clearly distingu
 
 ### UX objective
 The interview should feel like **Budget learning the household**, not like the user performing data entry for Budget.
+
+
+## 28. Discovery Decision 018 — Proactive Budget Advisor
+
+### Core product role
+Budget's AI companion is explicitly the **Budget Advisor**. It should proactively monitor the household financial model and surface useful guidance rather than requiring the user to know what question to ask.
+
+### Proactive advisory triggers
+Candidate triggers include:
+- spending pace likely to exhaust true available cash before the next income event;
+- projected negative carry-forward into the next pay period;
+- an upcoming bill or automatic withdrawal creating a cash squeeze;
+- materially unusual transaction amounts;
+- recurring charge increases or newly detected subscriptions;
+- category spending materially outside its normal/target range;
+- income arriving late, early or at an unexpected amount;
+- an opportunity to make a debt payment without compromising safety;
+- a newly released payment after an obligation is eliminated;
+- reserve-policy shortfalls;
+- meaningful changes in runway/safety state;
+- financial milestones worth recognizing;
+- unresolved high-impact transactions that need household confirmation.
+
+### Relevance threshold
+Proactivity must not become notification noise. The advisor should use materiality, urgency, confidence and user preferences to decide what deserves interruption. Routine low-value activity should generally update the model silently.
+
+### Advisor interaction pattern
+A useful proactive message should normally answer:
+1. **What changed?**
+2. **Why does it matter?**
+3. **What happens if nothing changes?**
+4. **What can we do about it?**
+5. **What would each meaningful option do to the household plan?**
+
+The user should be able to drill directly from the advisory into the evidence and scenario controls.
+
+### Forecast-driven advice
+The advisor should not be limited to retrospective alerts. Where the underlying data supports it, it should warn about likely future pressure before the household reaches the problem—for example, a current spending pace that is projected to create a deficit before payday.
+
+### Tone and behavioral principle
+The Budget Advisor should be calm, specific, educational and action-oriented. It should not shame users for spending or use anxiety as an engagement tactic. Its purpose is to reduce financial cognitive load and improve decisions.
+
+### Calculation and AI boundary
+Deterministic financial calculations, ledger state and forecast math remain authoritative. AI can interpret, prioritize and explain those results. It should not invent balances, obligations, due dates or mathematical outcomes.
+
+### Notification architecture implication
+Budget 1.0 should model advisor events/messages even if the earliest local alpha surfaces them only inside the application. External delivery channels (push, email, SMS, etc.) can be added later without changing the underlying advisory-event model.
