@@ -795,3 +795,33 @@ Multi-person access requires a household role/permission model. Not every member
 
 ### Commercial architecture implication
 Household membership, invitations, permissions, attribution and shared financial state are foundational domain concepts and should be present in the initial architecture even if the first household alpha begins with only one administrative user.
+
+
+## 21. Discovery Decision 011 — Household Roles, Visibility and Optional Open-Family Finance
+
+### Current household clarification
+Grace is not currently intended to receive a Budget login because she is living outside the household. Her vehicle remains an example of an expense/asset that may be financially supported by the household without making the beneficiary a household platform user.
+
+### Owner role
+Budget needs a household **Owner** role. A household can have more than one owner (for example, two adults/partners). Owners/admin-authorized users should control household membership, visibility and permissions.
+
+### Permission-based visibility
+Budget should not hard-code financial visibility solely from age or family relationship. Household owners should be able to decide how much another household member can see.
+
+A future permission model should support at least:
+- full household financial visibility for owners/authorized members;
+- limited/member-specific financial visibility;
+- the ability for owners to intentionally grant broader household visibility to another member.
+
+Exact role names and permission granularity will be designed later.
+
+### Open-family option
+Some households may deliberately choose an **open-family financial model** in which children or other household members can see the broader family budget. Budget should support this as an explicit owner-controlled option rather than assuming household finances must always be hidden from non-owner members.
+
+This creates an educational opportunity: where a household chooses transparency, younger members can learn how income, bills, spending, reserves and financial tradeoffs work in a real household context.
+
+### Privacy principle
+Openness must be opt-in. Adding a household member should not automatically expose sensitive account balances, debt details, income, financial documents or financial-action controls. Owners must affirmatively grant broader access.
+
+### Architectural implication
+Authorization must be enforced at the data/action layer, not merely by hiding interface elements. Household membership, roles and permissions therefore belong in the foundational security/domain architecture.
