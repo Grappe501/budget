@@ -2492,3 +2492,49 @@ Full transparency **inside the authorized household** does not reduce external p
 
 ### Product principle
 **For Steve + Kelly, Budget is one shared financial truth.** Commercial flexibility can come later without weakening the simplicity of the household alpha.
+
+
+## 60. Discovery Decision 049 — Lewis-Assisted Account Reconciliation and Trust Controls
+
+### Reconciliation is a core trust feature
+Budget should provide an explicit **Reconciliation Mode** whenever its modeled/ledger balance differs from the household's authoritative real-world account balance.
+
+Lewis should help explain and resolve the discrepancy rather than silently modifying records to force a match.
+
+### Reconciliation workflow
+A reconciliation session should be able to examine likely causes such as:
+- pending vs posted transactions;
+- CSV/export date-window gaps;
+- overlapping imports or duplicates;
+- missing transactions;
+- transfers;
+- cash withdrawals/allocations;
+- refunds/reversals;
+- bank fees/interest;
+- timing differences;
+- manual entries/corrections;
+- unresolved classification/import issues.
+
+### Preserve authoritative evidence
+Raw imported/source transactions remain immutable evidence. Budget may correct interpretation, linkage or reconciliation state, but should not rewrite source data merely to make totals agree.
+
+### Explicit reconciliation adjustments
+If a legitimate manual reconciliation adjustment is ultimately necessary, it must be explicit, labeled, dated, attributable to the user/session, explain its reason, participate correctly in balances, and remain auditable/reversible. It must never masquerade as an actual bank transaction.
+
+### Reconciliation status
+Accounts should be able to communicate whether they are reconciled through a particular date/balance, currently out of balance, or contain unresolved differences. Advanced drill-down should show the reconciliation history.
+
+### Lewis behavior
+Lewis should frame a mismatch as a solvable data-quality problem, e.g.:
+'We're $65 off from the bank balance. Let's find out why.'
+
+It should prioritize likely explanations and avoid inventing transactions or causes.
+
+### Forecast safety
+Material unreconciled differences should reduce confidence in forecasts/True Available Cash as appropriate. Lewis should disclose the uncertainty rather than present false precision.
+
+### Future connectivity
+When direct bank connectivity is eventually added, reconciliation remains useful for pending/posting behavior, cash, external activity and connector anomalies; it should not be designed as a CSV-only feature.
+
+### Product principle
+**Budget earns trust by explaining differences, not hiding them.** The household should always be able to understand why Budget believes its cash position is what it is.
