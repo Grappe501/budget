@@ -2538,3 +2538,50 @@ When direct bank connectivity is eventually added, reconciliation remains useful
 
 ### Product principle
 **Budget earns trust by explaining differences, not hiding them.** The household should always be able to understand why Budget believes its cash position is what it is.
+
+
+## 61. Discovery Decision 050 — Lewis Autonomy Boundary: Automatic Housekeeping, Human Financial Decisions
+
+### Core autonomy rule
+Lewis may autonomously maintain and improve the household financial **model** when evidence is strong, but humans retain control over consequential financial decisions and money movement.
+
+### Automatic housekeeping
+With appropriate confidence/evidence, Lewis may automatically perform routine model-maintenance actions such as:
+- update observed recurring amounts after a provider charge changes;
+- update predictive/seasonal forecasts as new evidence arrives;
+- apply established merchant/category rules;
+- refresh timing/cadence expectations;
+- recalculate derived metrics, projections, runway and True Available Cash;
+- close/resolve learning-queue items when evidence clearly resolves them;
+- update analytics after reconciled/corrected data;
+- maintain other non-consequential derived assumptions under documented rules.
+
+Automatic changes should be visible in an activity/audit history and easy to inspect/correct where appropriate.
+
+### Notification by materiality
+Lewis should not interrupt the household for every tiny housekeeping change. Material changes should be surfaced proactively; minor routine updates may remain in an activity/history surface available for review.
+
+### Explicit human approval required
+Lewis must not autonomously take or finalize consequential actions such as:
+- moving/sending money;
+- initiating or changing bill payments/autopay;
+- accessing Cash Reserve;
+- creating/confirming a Self-Bank Loan;
+- reallocating protected One-Time Goal money;
+- adopting a material new debt-payoff strategy;
+- committing to a major purchase/financial obligation;
+- permanently adopting a Financial Experiment as a household rule;
+- making provider cancellations/negotiated commitments unless a future authorized action workflow explicitly allows and confirms them;
+- other material decisions that change protected money, contractual obligations or household strategy.
+
+### Recommendations are not decisions
+Lewis may proactively recommend and fully model a consequential action, including showing the expected downstream effects. The recommendation becomes adopted only through the appropriate authorized household confirmation.
+
+### Confidence and reversibility
+Automatic housekeeping requires adequate evidence/confidence and should be reversible at the interpretation/model layer. Uncertain or high-impact changes should be escalated for confirmation instead of automated.
+
+### Commercial architecture
+The autonomy system should be policy-driven so future releases can expose additional household controls without weakening the default safety boundary. Steve + Kelly's alpha should follow the rule above.
+
+### Product principle
+**Lewis can keep the books intelligent without taking over the household. Maintain automatically; advise proactively; ask before consequential action.**
