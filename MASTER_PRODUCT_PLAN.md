@@ -2047,3 +2047,41 @@ When a goal is fully funded, Budget should clearly show that the money is ready 
 
 ### Product principle
 Budget should help households **make future life visible in today's money**. Saving for something should feel intentional and protected without confusing goal savings with emergency resilience or everyday available cash.
+
+
+## 50. Discovery Decision 039 — One-Time Goals Are Negotiable; Cash Reserves Are Not the Same Class of Money
+
+### Naming
+Future discretionary/planned savings targets of the type described in Decision 038 should be referred to as **One-Time Goals** (including one-time spending goals or one-time savings goals as context requires).
+
+Examples may include vacations, major purchases, holidays, planned projects or other finite future uses.
+
+### One-Time Goal funds are protected but negotiable
+Money allocated to a One-Time Goal should be excluded from ordinary available spending, but the household may deliberately reallocate it when circumstances change.
+
+Lewis should introduce **constructive friction** before reallocating protected One-Time Goal money rather than treating it like ordinary checking cash.
+
+### Reallocation conversation
+When a user requests money from a One-Time Goal, Lewis should determine/confirm:
+- how much is being reallocated;
+- where the money is going / its new purpose;
+- whether the new need should become a budget expense, obligation or another goal;
+- the resulting balance of the original goal;
+- how the original target date/funding requirement changes;
+- material effects on household cash flow and other plans.
+
+Example: if vacation money is redirected to an unexpected medical bill, Budget should record the medical expense/obligation appropriately and recalculate the vacation plan rather than merely moving an unlabeled amount back into spendable cash.
+
+### Reallocation remains user-controlled
+Lewis may question, explain and model consequences, but the household can choose to reallocate a One-Time Goal. The friction exists to make the tradeoff intentional and accurately modeled, not to prohibit the decision.
+
+### Cash Reserve remains a separate protected class
+The household's emergency/resilience **Cash Reserve** is not a One-Time Goal and must not inherit the more permissive reallocation behavior above.
+
+Existing decisions already establish that reserve access is excluded from ordinary overspend-recovery options and is assumed OFF unless deliberately enabled by an authorized owner/admin. A separate, stronger reserve-access design must govern any future attempt to use Cash Reserve funds.
+
+### Purpose follows the money
+Whenever protected money is deliberately reallocated, Budget should preserve the change in purpose so the financial model explains not only that money moved but **why** it moved and what household need replaced the original plan.
+
+### Product principle
+**One-Time Goals can bend when life changes; Cash Reserves require a different level of protection.** Lewis should help the household adapt without allowing protected money to become invisible miscellaneous spending.
