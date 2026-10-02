@@ -248,3 +248,41 @@ The product should progressively make the user more capable at managing househol
 
 ### Product implication
 The emerging product concept is a **Household Financial Command System**: a system of record, forecasting engine, financial coach, decision simulator, obligation manager, and—only with appropriate future security and authorization—financial action layer.
+
+
+## 11. Discovery Decision 002 — Safety, Resilience, and Emergency Runway
+
+### Safety is directional, not merely a reserve balance
+For this household, the primary definition of **financially safe** is a structurally cash-positive trajectory: recurring/expected income is sufficient to cover the household's actual ongoing spending and obligations, and the household is not steadily consuming reserves to maintain its current lifestyle.
+
+Budget should therefore prominently calculate and explain **net cash direction**. A proposed financial move—paying off an obligation, making an unusually large payment, increasing spending, moving money, or adopting another plan—should be modeled before execution. If the move causes the projected household trajectory to become cash-negative, Budget should make that consequence obvious.
+
+### Higher resilience state — working name: Fortified
+A separate status above ordinary safety will represent the household's ability to withstand a complete loss of income for one year.
+
+Working definition: **Fortified = sufficient appropriate accessible reserves to sustain approximately 12 months of modeled household expenses with zero new income.**
+
+The final name is intentionally unresolved. The calculation must eventually define which assets count as accessible reserves and which expenses belong in the applicable spending baseline.
+
+### Multiple runway views
+A single runway number is insufficient. Budget should eventually show at least:
+- **Current-lifestyle runway:** how long accessible reserves sustain observed/current household spending if income becomes zero.
+- **Essential/survival runway:** how long reserves sustain a deliberately reduced emergency budget if income becomes zero.
+- **Gap to 12-month resilience:** money and/or spending reduction required to reach the one-year target.
+
+### Emergency budget / Survival Mode
+Budget should support a preplanned reduced-spending state. The household can identify what can be cut, paused, reduced, renegotiated, or eliminated if income falls or another financial shock occurs.
+
+The system should help distinguish essential obligations from discretionary spending and should model how each reduction extends runway. The objective is to answer not merely 'How long can we survive?' but also 'What changes would make our resources last longer, and by how much?'
+
+### Decision simulation requirement
+Before meaningful financial decisions, Budget should be capable of comparing the current baseline with the proposed change and showing effects on:
+- monthly cash surplus/deficit;
+- near-term cash availability;
+- ordinary financial safety;
+- current-lifestyle runway;
+- emergency runway;
+- progress toward the 12-month resilience target;
+- downstream debt/bill obligations where applicable.
+
+This establishes a core product rule: **Budget should forecast the consequence before the household commits to the financial move.**
