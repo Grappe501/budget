@@ -34,14 +34,15 @@
     "wealth_builder_allowed": false,
     "self_bank_allowed": false
   },
-  "operator_gate": "STOP_AFTER_PASS_FOR_REAL_DATA_AUTHORIZATION",
+  "operator_gate": "EXECUTE_REAL_DATA_HANDOFF_PROTOCOL_AFTER_GREEN",
   "repair_policy": "WITHIN_ACTIVE_PASS_ONLY_NO_DOCTRINE_OR_INVARIANT_WEAKENING",
   "completion_requires": [
     "all_required_validation_green",
     "evidence_bundle_generated",
     "build_state_updated_by_validator",
     "handoff_regenerated",
-    "next_slice_generated_or_operator_gate"
+    "next_slice_generated_or_operator_gate",
+    "operator_checkpoint_presented_after_green"
   ],
   "stop_conditions": [
     "failed_financial_invariant",
@@ -50,5 +51,6 @@
     "unauthorized_real_data",
     "destructive_effect_not_preapproved",
     "required_fix_outside_pass_scope"
-  ]
+  ],
+  "handoff_protocol": "REAL_DATA_HANDOFF_PROTOCOL.md"
 }
