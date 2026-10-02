@@ -3,7 +3,7 @@
 **Status:** PRECOMPILED / construction-ready after scripts and manifests below are present
 **Human roadmap:** Pass 00 through Pass 14
 **Machine granularity:** six pre-authorized sub-slices A–F per parent pass
-**Execution rule:** sequential; GREEN unlocks next; Pass 11 stops for explicit real-data authorization.
+**Execution rule:** sequential; GREEN unlocks next; Pass 11 pauses for the precompiled `REAL_DATA_HANDOFF_PROTOCOL.md`; after operator authorization/CSV selection, P12–P14 resume automatically.
 
 ## Operator workflow
 Pull/clone this repository locally, open its root in Cursor, and instruct Cursor: **Read CURSOR_15_PASS_EXECUTION_PACKAGE.md and execute only the next READY pass from build state.** On a fresh clone before build state exists, begin with Pass 00. Cursor must read the individual script for that pass and all canonical authority documents. It may repair within pass boundaries but may not redesign Budget.
@@ -27,8 +27,8 @@ Pull/clone this repository locally, open its root in Cursor, and instruct Cursor
 
 ## Global gates
 - P00–P10: synthetic data only.
-- P11: prove real-data readiness and STOP.
-- P12: requires explicit operator authorization outside Git-sensitive data.
+- P11: prove real-data readiness, then execute the operator checkpoint in `REAL_DATA_HANDOFF_PROTOCOL.md` and request the CSV locally.
+- P12: begins only after that explicit authorization; after P12 GREEN, continue automatically through P13/P14.
 - P13: evidence-driven hardening.
 - P14: certification; ALPHA_ALIVE only on green evidence.
 - No pass may skip failed validation or weaken an invariant.
