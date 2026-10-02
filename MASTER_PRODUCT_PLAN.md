@@ -1,6 +1,6 @@
 # Budget — Master Product Discovery & Build Plan
 
-**Status:** Phases 0–3 complete; ready for Phase 4 Household Alpha construction  
+**Status:** Phases 0–3 complete; pre-construction forensic hardening complete; ready for Phase 4 Household Alpha construction  
 **Repository:** Grappe501/budget  
 **Canonical branch:** main  
 **Started:** October 2, 2026
@@ -2695,3 +2695,24 @@ The build progress model tracks **construction progress separately from trust re
 The project is ready to enter **Phase 4 — Household Alpha Construction**, beginning with **Cursor Pass 0 — Repository Preflight & Guardrails** only.
 
 Build north star: **Truth before intelligence. Intelligence before automation. Safety before real data.**
+
+
+## 66. Pre-Construction Forensic Audit & Layered Build Hardening — Complete
+
+Before construction, the master build plan received a hostile cross-layer wiring audit. The canonical overlay is `PRE_CONSTRUCTION_FORENSIC_AUDIT_AND_LAYERED_BUILD_HARDENING.md`.
+
+The audit confirmed the 15-pass Pass 0–14 sequence but found that feature sequencing alone was insufficient. The build now has a permanent layered spine:
+
+**Evidence → Interpretation → Planning → Deterministic Intelligence → Shared Financial Snapshot → Lewis → Experience**
+
+Controlled application commands flow mutations back through the domain, while typed Domain Change Events and a central invalidation/recompute graph ensure downstream models do not become silently stale.
+
+Hardening additions include: command/query separation; shared read models; authoritative-vs-derived state policy; domain-change events distinct from audit events; dependency/recalculation registry; explicit lifecycle state machines; calculation-policy versioning; migration doctrine; typed error/recovery model; Clock abstraction; stable IDs/fingerprints; database transaction/concurrency rules; retention/archive semantics; performance/index expectations; early UX primitives; a machine-readable build-state ledger; and a permanent 12-month synthetic Golden Household with known-answer regression outputs.
+
+The 15 construction passes remain, but each now extends the same vertical architecture rather than creating feature islands. A feature is not considered wired until its source, command, transaction boundary, provenance, audit, invalidation, recomputation, shared read model, UI/Lewis consumption, tests and Golden Household regression are connected.
+
+**Pre-construction hardening status: COMPLETE.**
+
+Hardened build north star: **One financial truth. One dependency spine. Many views. No hidden rewiring later.**
+
+Phase 4 may begin with Pass 0 only.
