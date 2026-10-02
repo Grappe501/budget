@@ -1,6 +1,6 @@
 # Budget — Master Product Discovery & Build Plan
 
-**Status:** Phases 0–3 complete; precompiled construction specification complete; ready to author all 15 Cursor execution scripts before construction  
+**Status:** Pre-construction planning FROZEN; all 15 Cursor execution scripts/manifests committed; ready for local pull and Pass 00  
 **Repository:** Grappe501/budget  
 **Canonical branch:** main  
 **Started:** October 2, 2026
@@ -2750,3 +2750,18 @@ The next and final planning deliverable before local construction is to author `
 **Precompiled specification status: COMPLETE.**
 
 Final rule: **Do not ask Cursor to design Budget while building Budget. Cursor executes contracts, proves gates, reports evidence, and stops when human authority is required.**
+
+
+## 69. Precompiled 15-Pass Cursor Execution Package — Complete
+
+The complete construction program is now committed to GitHub before local implementation begins.
+
+Canonical execution entrypoints are `START_HERE_FOR_CURSOR.md`, `CURSOR_15_PASS_EXECUTION_PACKAGE.md`, and `build/EXECUTION_INDEX.json`. All 15 parent passes P00–P14 have prewritten Cursor mission scripts under `cursor_passes/` and machine-readable manifests under `build/manifests/`. Each parent pass uses six pre-authorized sub-slices A–F and must close GREEN before the next parent pass unlocks.
+
+P00–P10 are synthetic-only. P11 proves real-data readiness and forces a STOP. P12 cannot begin without explicit operator authorization. P13 hardens from evidence. P14 certifies ALPHA_ALIVE only if the full evidence suite and household acceptance are green.
+
+The local operator workflow is now: pull the repository, open the repo root in Cursor, tell Cursor to read `START_HERE_FOR_CURSOR.md`, and execute only the next READY pass. P00 bootstraps the live build-state/generator machinery; subsequent work follows generated state within the precompiled scope.
+
+**Construction planning status: FROZEN / COMPLETE.**
+
+No sixteenth construction pass may be invented by Cursor. Architectural/product changes require controlled deviation rather than implementation-time improvisation.
