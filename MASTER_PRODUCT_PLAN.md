@@ -1260,3 +1260,35 @@ Comparisons should focus on cash-flow burden, total financing cost where known, 
 
 ### Product principle
 Grandfather's job is not merely to constrain spending. It is to help households accomplish things they value **without accidentally sacrificing the financial future they are trying to build.**
+
+
+## 32. Discovery Decision 022 — Optional Guilt-Free Spending and Automatic Debt Redirection
+
+### Safe enjoyment should be an option
+Budget should recognize that a sustainable household financial plan can include discretionary enjoyment. When the household's current position supports it, Grandfather may proactively identify an amount that can be spent on a date, outing or other discretionary enjoyment without materially undermining required obligations, protected reserves or the active debt plan.
+
+### Offered, not automatically consumed
+Guilt-free/fun money should be presented as an **option**, not assumed spending. The household can accept, reduce or decline the suggested discretionary amount.
+
+### Declined fun money gets a job
+If the household declines an offered discretionary allocation, that capacity should not simply disappear back into an undefined spending pool. Budget should recommend redirecting it toward the current debt-paydown target or other applicable priority under the household's active allocation rules.
+
+### Safe-to-enjoy calculation
+A suggested discretionary amount should be grounded in the household model, considering at minimum:
+- true available cash through the relevant income horizon;
+- upcoming required obligations;
+- protected reserve policy;
+- existing spend-forward/carry-forward;
+- active debt-payment commitments;
+- safety/runway trajectory;
+- other already-approved goals.
+
+### Grandfather behavior
+Grandfather should not treat all discretionary spending as failure. When the household can genuinely afford something, the Advisor should be capable of saying so plainly and without guilt. Conversely, it should not manufacture 'fun money' merely to improve engagement when the household's cash position does not support it.
+
+### Decision flow
+A candidate interaction is:
+**Grandfather identifies safe discretionary capacity → household accepts/reduces/declines → accepted amount becomes an explicit discretionary allowance → declined amount is proposed for debt/priority allocation → forecast updates immediately.**
+
+### Product principle
+Budget is optimizing for a financially sustainable life, not maximum deprivation. The system should help users distinguish intentional, affordable enjoyment from spending that quietly undermines their goals.
