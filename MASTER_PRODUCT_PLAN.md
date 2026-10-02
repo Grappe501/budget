@@ -2274,3 +2274,65 @@ Lewis should be able to say plainly that the household's rate was set when it bo
 ### Self-Bank rate mechanics status
 With this decision, the core rate mechanics are resolved:
 **Fed target-range upper bound at origination + purpose-category spread = fixed Self-Bank APR for the life of the loan.**
+
+
+## 55. Discovery Decision 044 — Permanent Financial Life Record and Longitudinal Behavior Intelligence
+
+### Budget should remember the household's financial journey
+Budget should preserve a durable **Household Financial Life Record** so the household can understand not only its current financial position but how that position and its behavior changed across months and years.
+
+This historical record is a core intelligence asset, not merely archival reporting.
+
+### Longitudinal snapshots and milestones
+Budget should be able to reconstruct/compare meaningful historical states such as:
+- cash and True Available Cash;
+- normal and essential runway;
+- Cash Reserve and progress toward resilience;
+- total and categorized outside debt;
+- monthly debt-service burden;
+- income and spending patterns;
+- recurring obligations;
+- One-Time Goals and outcomes;
+- Self-Bank borrowing/repayment once applicable;
+- major payoff, reserve and financial-safety milestones;
+- relevant household budget/behavior changes.
+
+Snapshots should be derived from authoritative underlying records wherever possible rather than relying solely on denormalized summary values.
+
+### History powers behavior intelligence
+Lewis should use longitudinal household data to identify **household-specific behavioral patterns** that may help the family improve its financial trajectory and reach later wealth-building stages faster.
+
+Potential analyses include relationships between:
+- category spending pace and month-end cash position;
+- payday behavior and later cash pressure;
+- recurring discretionary patterns and debt-payoff progress;
+- freed-payment capacity and whether it was intentionally redeployed or absorbed into spending;
+- planned vs unplanned purchases;
+- successful/unsuccessful goal-funding patterns;
+- reserve growth and interruptions;
+- seasonal expenses;
+- income variability and household responses;
+- past corrective actions and whether they actually improved outcomes.
+
+### Correlation is not causation
+Lewis must distinguish observed association from demonstrated cause. Historical patterns should be explained as evidence from the household's own data, with appropriate uncertainty, rather than making unsupported causal claims.
+
+### Actionable learning
+The objective is not simply to say what happened. Lewis should connect a meaningful pattern to a practical experiment or decision, then track whether that change improves outcomes over time.
+
+This creates a learning loop:
+**observe → detect pattern → explain evidence → propose adjustment → household decides → measure result → learn.**
+
+### Financial journey experience
+Users should be able to drill into a timeline/journey showing meaningful before-and-after progress—for example changes in outside debt, reserves, runway, debt-service burden and eventually the transition toward Self-Bank capability.
+
+Milestones should be celebrated without hiding setbacks. Periods of regression remain part of the record and can provide useful behavioral evidence.
+
+### Historical integrity
+Corrections to classifications or financial facts may legitimately recalculate historical analytics, but Budget must preserve source records, correction history/provenance and enough audit information to explain why a historical interpretation changed.
+
+### Privacy and commercial architecture
+Because longitudinal financial/behavioral data is especially sensitive, future commercial architecture must apply strong household isolation, access control, retention/export/deletion design and privacy protections. The product should not depend on selling household financial behavior data as its business model.
+
+### Product principle
+**Time turns transactions into intelligence.** Budget should help the household learn from its own financial history so that better behavior compounds alongside better cash flow.
