@@ -1211,3 +1211,52 @@ A strong 'no' from Grandfather is advisory unless the household has separately c
 
 ### Educational objective
 Grandfather should teach the household to evaluate purchases in terms of opportunity cost and trajectory, gradually replacing the common question 'Do we have the money?' with the more useful question 'Can we afford this without undermining what we're building?'
+
+
+## 31. Discovery Decision 021 — Dynamic Purchase Pathways and Creative Scenario Planning
+
+### 'Not yet' should become a pathway to yes
+When Grandfather determines that a desired purchase is not currently affordable, the interaction should not end with rejection. Budget should offer to turn the purchase into a goal and construct one or more realistic pathways toward making it affordable.
+
+### Purchase pathway engine
+For a proposed purchase, Budget should be able to model combinations of:
+- saving a fixed amount per paycheck/pay period;
+- target purchase timing;
+- cash purchase versus down payment plus financing;
+- expected debt payoff dates that release monthly cash flow;
+- redirecting released payments after an obligation ends;
+- expected/variable income events where appropriately confidence-weighted;
+- windfalls/bonuses under household allocation rules;
+- spending reductions the household elects to make;
+- different down-payment amounts;
+- financing payment/term/interest assumptions supplied by the user or verified source;
+- effects on reserve policy, true available cash, debt trajectory and safety.
+
+### Timeline-aware example
+A valid strategy may deliberately span financial phases. For example, Budget might determine that saving a defined amount each paycheck until a vehicle loan is paid off creates a larger down payment, after which some of the released vehicle-payment capacity could support a carefully modeled new obligation. This should be compared against waiting longer and paying cash or other reasonable alternatives.
+
+The engine must calculate the actual consequences rather than assuming that taking a new note after another is paid off is automatically desirable.
+
+### Creative but grounded planning
+Grandfather should look across the household financial timeline for combinations that help achieve a goal, but creativity must remain grounded in known or explicitly modeled numbers. It should not fabricate future income, financing terms, asset values or savings capacity.
+
+### Dynamic goals
+Purchase plans should automatically recalculate when material inputs change—for example:
+- an obligation is paid off earlier/later than expected;
+- income changes;
+- actual savings differ from plan;
+- the purchase price changes;
+- financing terms change;
+- an unexpected expense occurs;
+- household safety/reserve position changes.
+
+The system should explain what changed and how the target date/path moved.
+
+### Scenario comparison
+Rather than presenting only one answer, meaningful purchase decisions should support side-by-side scenarios such as:
+**buy sooner with financing / build larger down payment / wait and pay cash / postpone while accelerating debt.**
+
+Comparisons should focus on cash-flow burden, total financing cost where known, time to purchase, effect on debt-free progress, reserves and financial safety.
+
+### Product principle
+Grandfather's job is not merely to constrain spending. It is to help households accomplish things they value **without accidentally sacrificing the financial future they are trying to build.**
