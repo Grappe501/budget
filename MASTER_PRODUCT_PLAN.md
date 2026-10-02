@@ -1035,3 +1035,46 @@ The reveal should summarize the historical period in understandable household te
 
 ### Product success criterion
 A successful first-run experience should make the user feel that Budget **understood their financial life from the evidence they already had**, substantially reducing setup work. The first reveal must remain auditable: every conclusion should be drillable back to the transactions/patterns that caused Budget to propose it.
+
+
+## 27. Discovery Decision 017 — Guided Financial Interview
+
+### Post-import onboarding mode
+After the first-run financial reveal, Budget should lead the user through a **guided financial interview** rather than dropping them into a dashboard and expecting them to discover/correct model errors manually.
+
+### Interview purpose
+The system performs the first analytical pass; the human supplies household knowledge only where it materially improves accuracy. The interview should progressively convert inferred patterns into a trusted household financial model.
+
+### Question prioritization
+Questions should be prioritized by financial consequence and uncertainty, considering factors such as:
+- high-dollar recurring transactions;
+- uncertain income/debt/transfer classification;
+- obligations that materially affect true available cash;
+- recurring transactions with unclear merchant identity;
+- timing/due-date uncertainty;
+- suspected duplicates/transfers/reimbursements;
+- lower-dollar subscriptions and minor classification questions later.
+
+The interview should not force users through hundreds of obvious transactions before delivering value.
+
+### Conversational confirmation examples
+Budget may ask focused questions such as:
+- 'I see a payment around this time most months. What is it?'
+- 'I think this is your electric utility. Is that correct?'
+- 'Is this a debt payment, transfer, purchase, or something else?'
+- 'I observed this payment near the 14th; is that the actual due date or simply when you normally pay it?'
+- 'Does this expense belong to the household, a person, or a business/reimbursable activity?'
+
+### Progressive enrichment
+Confirmed answers should update the appropriate structured objects and household rules so the user is not repeatedly asked the same question on future imports.
+
+Where a bill/debt needs deeper information unavailable from the bank ledger, the interview can mark it for later enrichment rather than blocking onboarding.
+
+### Progress and resumability
+The interview must show meaningful progress and be safely resumable. Users should be able to pause and use the application before every low-priority uncertainty is resolved.
+
+### Dashboard transition
+The dashboard can exist immediately after import, but it should clearly distinguish provisional versus confirmed information. As the guided interview progresses, confidence in the household model increases and recommendations can become correspondingly more specific.
+
+### UX objective
+The interview should feel like **Budget learning the household**, not like the user performing data entry for Budget.
