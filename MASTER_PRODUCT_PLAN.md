@@ -859,3 +859,47 @@ If a category is $50 over budget, Budget can show repair paths such as reducing 
 
 ### Permission implication
 Reserve-access settings are financially consequential household controls and belong to the owner/admin permission layer. Non-owner household members should not be able to enable protected-reserve spending unless specifically granted that authority.
+
+
+## 23. Discovery Decision 013 — Windfall Allocation and Wealth-Builder Transition
+
+### Unexpected money should receive a recommended job
+Unexpected/irregular income should not default to unallocated spendable cash. Once an inflow is identified and classified, Budget should proactively recommend how the deployable amount should be allocated according to the household's current financial stage and policies.
+
+Examples include bonuses, irregular project income and other unplanned household inflows. Reimbursements, restricted-purpose funds and business gross revenue must still be classified correctly before this policy is applied; they are not automatically household windfalls.
+
+### Current household allocation doctrine
+The current intended progression is:
+**protect reserves according to household policy → optimize debt reduction while the household is below its resilience target → transition eligible surplus/windfalls toward Wealth Builder after the one-year reserve milestone is achieved.**
+
+The exact waterfall, including how quickly reserves are built versus debt is attacked, remains subject to scenario design and later household configuration. This section records the strategic intent rather than prematurely hard-coding a universal financial rule.
+
+### One-year reserve milestone as phase transition
+The previously identified approximately 12-month zero-new-income resilience target becomes a major state transition in the product.
+
+Before the milestone, Budget's principal optimization objective is financial stability/resilience plus debt control/elimination. Once the milestone is satisfied under the household's defined reserve calculation, eligible excess capital can begin flowing into the future **Wealth Builder** layer according to household-selected strategy.
+
+### Windfall recommendation engine
+For an eligible windfall, Budget should be capable of showing:
+- gross inflow and classification;
+- amounts excluded because they are reimbursement, restricted, business-retained, tax-reserved or otherwise unavailable;
+- reserve allocation required by current policy;
+- remaining deployable amount;
+- recommended debt/goal allocation;
+- expected interest savings and/or cash-flow release;
+- resulting payoff changes;
+- resulting reserve/runway position;
+- current progress toward the Wealth Builder transition;
+- user-controlled alternatives/override.
+
+### No silent execution
+Recommendation is not authorization. Budget can produce a recommended allocation immediately, but it must not independently make debt payments, transfers or investments without the applicable user authorization and financial-action controls.
+
+### Wealth Builder boundary
+Wealth Builder is the planned post-foundation financial layer. Its detailed investment strategy, asset allocation, products and execution rules are intentionally deferred until the debt/cash-control system is designed and operating. Budget 1.0 should expose progress toward eligibility without prematurely becoming an investment platform.
+
+### Product narrative implication
+The application now has a clear household journey:
+**Understand → Control → Protect → Eliminate Debt → Become Resilient → Build Wealth.**
+
+This journey should eventually be visible in the product so users understand not only today's numbers but the financial stage they are working toward next.
