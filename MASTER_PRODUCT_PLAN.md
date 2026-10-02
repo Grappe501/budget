@@ -553,3 +553,61 @@ For each meaningful recommendation, Budget should show **why**, the numbers/assu
 
 ### Product UX implication
 A major commercial differentiator should be **low-friction financial onboarding**: instead of asking a new user to remember and manually construct their entire financial life, Budget reconstructs a proposed model from their real transaction history and asks them to correct only what needs human knowledge.
+
+
+## 16. Discovery Decision 006 — Reserve-First Money Flow and Daily Financial Companion
+
+### Household reserve rule
+The household wants a default policy of allocating **10% of applicable incoming money to cash reserves before calculating ordinary spendable money**.
+
+The 10% figure is the initial household policy, not a hard-coded product assumption. A commercial version must make reserve policies configurable and define which inflows they apply to.
+
+### Protected reserve behavior
+Reserve money should be psychologically and operationally separated from ordinary available cash. The primary dashboard's spendable/available figure should exclude protected reserves by default.
+
+Accessing protected reserve funds should require a deliberate user decision rather than allowing routine spending to silently consume them. A future implementation can use an explicit reserve-release/override flow with reason and audit history.
+
+The application itself must not imply that UI separation creates legal or banking segregation unless funds are actually held in a separate financial account.
+
+### Waterfall concept
+Candidate household money flow:
+**Income received → classify inflow → reserve allocation → required near-term obligations → available/discretionary cash → debt/goal allocation.**
+
+The exact waterfall must remain flexible enough to handle reimbursements, restricted-purpose funds, business revenue and other inflows that should not automatically receive identical treatment.
+
+### Released-payment rule
+When an obligation is eliminated, Budget should immediately recognize the monthly cash flow that has been released. The household wants the reserve policy to continue applying appropriately while the remaining released capacity is intentionally redirected rather than disappearing into lifestyle spending.
+
+The system should ask where released cash should go and model alternatives such as another debt, additional reserves, mortgage principal or another household goal.
+
+### Dynamic debt allocation engine
+The household does not want to commit blindly to a single debt philosophy. Budget should continuously compare reasonable payoff strategies, including:
+- smaller-balance/cash-flow-release strategies;
+- high-interest/interest-minimization strategies;
+- hybrid strategies;
+- household-defined priority obligations.
+
+Comparisons should show concrete consequences such as interest avoided, payoff dates, monthly cash flow released, effect on reserves, effect on financial safety/runway, and the time until subsequent obligations can be attacked.
+
+The AI may recommend a current strategy, but the underlying calculations and assumptions must be inspectable and the household retains the decision.
+
+### Daily Financial Companion
+Budget is intended to be useful at daily resolution, not merely during a monthly budgeting session. The desktop experience should provide an immediate answer to questions such as:
+- What can we safely spend today?
+- What bills or cash-flow events are approaching?
+- Are we moving financially forward or backward?
+- Did today's spending materially change the plan?
+- What is the highest-value financial action available now?
+
+### Live category allowance
+The target budget should support near-real-time category balances. If a category has $100 available for the relevant period and $3 of categorized spending is recorded, the interface should be capable of showing the remaining $97, subject to pending/posted transaction and timing rules.
+
+Category availability should ultimately support appropriate time horizons (day, remaining pay period, month, etc.) rather than misleadingly dividing every category into identical daily allowances.
+
+### Peace-of-mind objective
+A core product outcome is **reduced financial cognitive load**. The household should not have to mentally remember which obligation is next, whether spending money is actually available, or whether a financial decision jeopardizes an upcoming bill. Budget should surface upcoming pressure points and explain the current position while keeping the underlying data available for inspection.
+
+### Daily optimization concept
+Budget should recalculate recommendations when meaningful inputs change, while avoiding noisy or arbitrary advice. New transactions, income, paid-off obligations, changed balances, upcoming bills, and user scenario changes can update the recommended next financial move.
+
+This creates a core experience analogous to a financial command board: **current position → today's available capacity → upcoming risks → trajectory → recommended next move → scenario controls.**
