@@ -1,6 +1,6 @@
 # Budget — Master Product Discovery & Build Plan
 
-**Status:** Phase 0 Discovery complete; Phase 1 Product Specification complete; Phase 2 Technical Blueprint complete  
+**Status:** Phases 0–3 complete; ready for Phase 4 Household Alpha construction  
 **Repository:** Grappe501/budget  
 **Canonical branch:** main  
 **Started:** October 2, 2026
@@ -2678,3 +2678,20 @@ The central boundary is: **the financial engine must remain trustworthy without 
 **Phase 2 status: COMPLETE.**
 
 The active next phase is **Phase 3 — Cursor Build Plan**. Phase 3 must convert the product specification and technical blueprint into large ordered implementation passes with explicit validation, safety gates, and operator review checkpoints before real household financial data is introduced.
+
+
+## 65. Phase 3 Cursor Build Plan — Complete
+
+Phase 3 is canonical in `PHASE_3_CURSOR_BUILD_PLAN.md`.
+
+The implementation program contains Passes 0–14: repository guardrails; application/database foundation; financial domain/audit spine; synthetic CSV ingestion; ledger/classification; review/learning; recurring income/bills/reconstruction; forecast/calendar/True Available Cash; reconciliation; Alpha dashboard; Lewis; security/backup/real-data readiness; operator-gated first real household import; UX/trust hardening; and formal Definition-of-Alive acceptance.
+
+A hard real-data gate sits after Pass 11. No Steve/Kelly financial CSV or real household financial data enters the system until import idempotency, raw immutability, financial calculation invariants, reconciliation, access controls, secret/data isolation, and backup/restore are proven and the operator explicitly approves proceeding.
+
+The build progress model tracks **construction progress separately from trust readiness** so UI/file volume cannot masquerade as financial readiness.
+
+**Phase 3 status: COMPLETE.**
+
+The project is ready to enter **Phase 4 — Household Alpha Construction**, beginning with **Cursor Pass 0 — Repository Preflight & Guardrails** only.
+
+Build north star: **Truth before intelligence. Intelligence before automation. Safety before real data.**
