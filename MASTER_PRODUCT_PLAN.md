@@ -745,3 +745,53 @@ Before pricing is finalized, Budget must measure actual costs including AI infer
 The intended consumer value proposition is broader than expense tracking: help ordinary households understand where their money goes, reduce financial anxiety, get control of debt, build reserves, learn financial decision-making and ultimately progress toward wealth accumulation.
 
 The product should be designed for very low onboarding friction and strong word-of-mouth potential. Product quality and measurable household value—not artificially high AI usage—should drive retention and growth.
+
+
+## 20. Discovery Decision 010 — Multi-Person Household Workspace and Expense Attribution
+
+### Household-first identity model
+Budget should be designed as a **multi-person household financial workspace** rather than a single-user budget with additional logins added later.
+
+Each household member who participates in household spending should be able to have an individual authenticated profile/login and an appropriate view of the shared household financial position.
+
+### Separate financial roles
+The data model must distinguish at least:
+- **transaction actor:** who made/submitted the purchase or transaction;
+- **payer/funding source:** which household account or funding source paid;
+- **beneficiary/attribution:** who the expense was for;
+- **household expense:** expenses intentionally attributed to the household rather than divided among people.
+
+These concepts must not be collapsed into one 'person' field.
+
+### Household expenses should stay household expenses
+Ordinary shared necessities such as groceries and normal household products should default to household-level spending. Budget should not manufacture arbitrary per-person allocations merely because multiple people consume them.
+
+The purpose of attribution is useful understanding, not surveillance or false precision.
+
+### Optional individual/shared attribution
+For expenses where attribution is meaningful—such as dining out—the user should be able to choose:
+- household/shared;
+- me only;
+- another individual;
+- any selected combination of household members.
+
+A receipt/transaction can therefore be associated with the people who actually participated without requiring a more granular split unless the user wants one.
+
+### Example: family-supported asset
+A vehicle can belong to or primarily benefit one family member while its payment comes from the shared household budget. Budget must preserve that distinction so the household can understand both responsibility and beneficiary without distorting cash flow.
+
+### Member experience
+A household member's future login/view should support appropriate functions such as:
+- see current safe-to-spend/household position according to permissions;
+- see relevant category allowances;
+- submit/upload receipts;
+- identify themselves as transaction actor;
+- attribute eligible purchases to themselves, other household members or the household;
+- review/correct transactions they are responsible for;
+- understand how current spending affects the shared plan.
+
+### Permission requirement
+Multi-person access requires a household role/permission model. Not every member should automatically receive identical access to sensitive balances, debts, documents, account connections, settings or financial actions. Exact roles and permissions remain a later discovery/design decision.
+
+### Commercial architecture implication
+Household membership, invitations, permissions, attribution and shared financial state are foundational domain concepts and should be present in the initial architecture even if the first household alpha begins with only one administrative user.
