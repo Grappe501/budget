@@ -2085,3 +2085,67 @@ Whenever protected money is deliberately reallocated, Budget should preserve the
 
 ### Product principle
 **One-Time Goals can bend when life changes; Cash Reserves require a different level of protection.** Lewis should help the household adapt without allowing protected money to become invisible miscellaneous spending.
+
+
+## 51. Discovery Decision 040 — Cash Reserve as the Household's Own Bank
+
+### Core doctrine
+The protected Cash Reserve should be treated conceptually as **the household's own bank**, not as backup checking or an ordinary savings envelope.
+
+When reserve money is deliberately used, the household does not simply 'spend the reserve.' It **borrows from itself** and creates an internal obligation to restore the money.
+
+### Reserve Loan
+A withdrawal from protected Cash Reserve should create a structured **Reserve Loan** containing at minimum:
+- amount borrowed / original principal;
+- date;
+- stated purpose;
+- applicable internal interest rate and its source/effective date;
+- accrued/expected interest calculation method;
+- repayment plan/cadence;
+- outstanding principal;
+- interest owed back to the household reserve;
+- projected payoff date;
+- actual repayments;
+- resulting reserve balance/runway while the loan is outstanding.
+
+### Interest belongs to the household
+Interest on a Reserve Loan is not an external expense paid to a lender. It is an additional amount the household commits to return to its own protected reserve. The objective is to compensate the reserve for being used and create meaningful friction around reserve withdrawals.
+
+### Federal-rate benchmark — exact benchmark still to be specified
+Steve wants the internal Reserve Loan rate tied to an applicable **federal interest-rate benchmark** current at the time of borrowing.
+
+Implementation must not guess what 'the federal interest rate' means. Before this feature is finalized, Budget must define the exact authoritative benchmark/rule (for example, whichever federal rate Steve ultimately selects), source it from an authoritative current data source, preserve the rate/effective date used for each Reserve Loan, and define whether that rate remains fixed for the loan or changes over time.
+
+This is an explicit specification item to resolve before implementation of automated Reserve Loan interest calculations.
+
+### Pre-withdrawal affordability analysis
+Before protected reserve money is reclassified/released for use, Lewis should model the proposed Reserve Loan and show:
+- purpose and amount;
+- reserve remaining after borrowing;
+- resulting normal/emergency runway;
+- proposed interest/rate assumption;
+- repayment amount/cadence;
+- how repayment fits into forward cash flow;
+- what existing goals/debt-paydown/discretionary capacity would be displaced;
+- projected reserve restoration date;
+- material alternatives where available.
+
+The household retains final authority, but reserve access should require deliberate confirmation after reviewing the modeled consequences.
+
+### Top-priority repayment
+An active Reserve Loan should become a **top-priority household payoff obligation** in the budget. Lewis should incorporate repayment into True Available Cash and forward planning before ordinary discretionary allocation, subject to essential household needs and unavoidable external obligations.
+
+The detailed ordering among legally/contractually required external obligations, essential survival needs and the internal Reserve Loan must remain financially safe; 'top priority' must not cause Budget to recommend missing mandatory external obligations merely to repay the household faster.
+
+### Rebuild with interest
+Reserve Loan completion occurs only when the borrowed principal **plus the household's required internal interest** has been restored according to the defined rule. Budget should separately track original reserve contributions, returned principal and internal interest so advanced reporting does not misclassify the internal interest as outside income.
+
+### Reserve protection remains stronger than One-Time Goals
+One-Time Goals can be deliberately reallocated with constructive friction. Cash Reserve access requires the stronger Reserve Loan workflow, affordability analysis, explicit purpose and rebuild obligation.
+
+### Lewis behavior
+Lewis should frame reserve borrowing calmly and concretely:
+**why we need it → what we're borrowing from ourselves → what remains protected → what it will cost us to restore it → how we'll repay ourselves → what other plans temporarily change.**
+
+### Product principle
+**If the household must use its safety net, the money still belongs to its future self.** Budget should make borrowing from that future explicit, measurable and repayable rather than allowing emergency savings to disappear without a recovery plan.
