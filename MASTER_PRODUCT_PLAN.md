@@ -401,3 +401,90 @@ This relationship model will allow the system to answer questions such as:
 
 ### Existing credit-card payoff requirement
 Although credit cards are not currently being used for ordinary new purchases, existing balances belong in the debt-elimination system. They should not be confused with active spending instruments merely because payments appear in the bank ledger.
+
+
+## 14. Discovery Inventory 004B — Debt, Restricted Funds, Utilities and Recurring Spending
+
+**Status:** Question 4 inventory remains open for additional remembered items.
+
+### Additional revolving / consumer debt identified
+Current remembered obligations now include:
+- Lowe's credit account;
+- Best Buy credit account;
+- Home Depot credit account;
+- Capital One general-purpose Visa/credit account, described as one of the larger balances;
+- Discover credit account, described as a significant payment/balance obligation;
+- U.S. Bank/local card, currently remembered as approximately a $100 monthly payment;
+- Synchrony Car Care account;
+- another Synchrony-financed account, possibly originally associated with furniture; exact product/creditor relationship to be verified.
+
+All issuer names, balances, APRs, minimums, due dates and account status must later be verified from statements/source records. No guessed financial terms should become authoritative data.
+
+### Medical / provider obligation
+- Money is owed to Jeff Powell DDS (dentist). Exact balance, terms and payment arrangement remain to be entered.
+
+Budget must support direct provider balances in addition to conventional loans/cards.
+
+### Legacy farm/feed debt
+- Approximately $40,000 is remembered as an outstanding/delinquent feed-related debt associated with the earlier closure of the farm operation.
+- It is currently described as sitting unresolved and is a long-term obligation the household wants to address.
+- Amount, creditor, legal/status details and enforceable terms must be verified before the system treats them as authoritative.
+
+This establishes a requirement for a **Legacy / Resolution Debt workspace** separate from ordinary monthly revolving debt. It should eventually support verified balance/status, source documents, contacts, payment history, proposed arrangements, settlement/payment-plan scenarios, cash-flow consequences, and notes without the AI making unsupported legal conclusions.
+
+### Collection / judgment-type obligations
+- Approximately two or three collection/judgment-type obligations are remembered as having automatic withdrawals.
+- Exact creditors, balances, legal status, withdrawal amounts, frequency and remaining obligations remain to be inventoried and verified.
+
+These require a status-aware debt model rather than being treated merely as subscriptions. Automatic withdrawals should be visible in the cash-flow calendar and linked to the underlying obligation.
+
+### Pre-tax / restricted-purpose medical funds
+Kelly has a payroll-funded flexible spending-type account used for eligible medical/dental expenses. Exact plan type and rules will be verified later.
+
+Budget should model restricted-purpose funds separately from ordinary cash. The system should be able to understand payroll contributions/deductions, available balance when known, eligible household medical/dental spending, reimbursements/payments, and the effect of using restricted funds instead of checking-account cash. Tax/eligibility rules should be sourced rather than guessed.
+
+### Utilities and essential operating costs identified
+Known household operating expenses include:
+- electricity;
+- water;
+- animal feed;
+- cellular phone service;
+- internet service.
+
+Current household infrastructure also includes:
+- septic rather than a recurring sewer utility bill;
+- a butane/propane-type fuel system rather than a conventional natural-gas utility bill. Fuel purchases/refills should therefore be modeled as potentially irregular/seasonal household energy expenses rather than assuming a monthly gas bill.
+
+### Recurring digital / entertainment services remembered
+Examples currently remembered include:
+- Netflix;
+- Hulu;
+- YouTube TV;
+- ChatGPT account/subscription charges;
+- other recurring services expected to be discovered through transaction ingestion.
+
+### Recurring-charge discovery requirement
+Bank transaction ingestion should automatically identify likely recurring charges rather than requiring perfect manual recall. The system should build a candidate recurring-charge inbox where the household can confirm:
+- what the merchant/service actually is;
+- whether the charge is expected;
+- frequency and typical amount;
+- whether the household still uses/wants it;
+- which person/purpose it supports;
+- whether it is essential, discretionary, business-related, reimbursable or duplicative;
+- estimated annual cost;
+- effect on financial runway if cancelled or reduced.
+
+Unknown merchant descriptors should remain unresolved until evidence or user confirmation identifies them.
+
+### Expanded debt taxonomy
+The product now needs to distinguish at minimum:
+- mortgage/property financing;
+- vehicle financing;
+- active revolving consumer debt being paid down;
+- provider/medical debt;
+- legacy/delinquent obligations;
+- collection/judgment/payment-plan obligations;
+- household obligations paid on behalf of another family member;
+- planned obligations not yet active.
+
+Debt payoff planning must account for both mathematical optimization and real cash-flow constraints. No recommendation should assume that an extra payment is beneficial if it creates an unsafe near-term cash position.
