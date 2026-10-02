@@ -339,3 +339,65 @@ When paycheck details are supplied, Budget should be capable of tracking gross c
 The planned Elves Tribal SaaS revenue introduces a future requirement to distinguish **business economics from household economics**. Budget should eventually model how business revenue, business expenses, taxes/reserves, and owner distributions/compensation flow into the household without commingling the concepts.
 
 The exact business structure and tax treatment are deliberately unresolved and should not be assumed by the application or AI.
+
+
+## 13. Discovery Inventory 004A — Accounts, Property, Vehicles, Debt and Insurance (Part 1)
+
+**Status:** incomplete inventory; discovery answer intentionally paused and will continue before advancing to the next question.
+
+### Banking and day-to-day spending
+- One joint bank account currently serves as the household's primary banking/spending account.
+- Current day-to-day purchasing is primarily through debit rather than new credit-card borrowing.
+- Existing credit-card balances/debts are being paid down, but the household is not currently using those cards for ordinary new credit purchases.
+- Bank/debit transaction ingestion is therefore a high-priority source for understanding actual household spending behavior and identifying reductions.
+
+### Farm / primary property
+The household has a farm consisting of approximately 15 acres and an approximately 1,600-square-foot older ranch house, with a mortgage.
+
+Budget should treat this as more than a recurring mortgage bill. The future property record should be capable of tracking:
+- mortgage balance and terms;
+- principal versus interest when source data permits;
+- scheduled payoff trajectory;
+- additional-principal scenarios;
+- estimated property value;
+- estimated equity (clearly labeled as an estimate where applicable);
+- ownership goal/progress;
+- insurance and other property-related recurring costs;
+- scenario comparisons showing what additional payments do to payoff time, interest, liquidity, and overall household financial safety.
+
+A major household goal is ultimately to own the land/property free of the mortgage. The system should help determine when accelerated payoff is financially sustainable rather than assuming faster payoff is always optimal.
+
+### Vehicles
+Known vehicles/obligations currently include:
+- Grace's vehicle, with a loan/payment through Carvana that the household is paying;
+- Kelly's Nissan Altima, with a loan/payment that is approaching payoff;
+- a Buick Enclave owned without a current loan/payment.
+
+Budget should support assets whose user/beneficiary and payer differ—for example, a vehicle used by an adult child but paid by the household.
+
+### Vehicle insurance
+The household currently pays insurance covering all three vehicles. Vehicle insurance should be linkable to the applicable vehicles while still appearing correctly as a household obligation.
+
+### Property / premises insurance
+Known or planned insurance-related items include:
+- homeowners insurance, currently described as an annual expense;
+- a planned renters-insurance need for the headquarters location that is not yet an active household expense and therefore should be represented as a planned/future obligation rather than falsely recorded as currently paid.
+
+The exact relationship between property insurance, homeowners coverage, mortgage escrow, and other property coverage remains to be verified from source documents rather than assumed.
+
+### Product requirement — Financial relationship graph
+Budget should not model everything as isolated transactions. It should support relationships such as:
+
+**Asset → financing/debt → payment → insurance → responsible household member → cash-flow effect → payoff/equity goal.**
+
+This relationship model will allow the system to answer questions such as:
+- What does this asset really cost the household each month/year?
+- How much equity do we have?
+- When will the debt be paid off?
+- What happens if we add $X to principal?
+- How much cash flow is released after payoff?
+- Where should that released payment be redirected?
+- Does accelerating payoff reduce our near-term financial safety?
+
+### Existing credit-card payoff requirement
+Although credit cards are not currently being used for ordinary new purchases, existing balances belong in the debt-elimination system. They should not be confused with active spending instruments merely because payments appear in the bank ledger.
