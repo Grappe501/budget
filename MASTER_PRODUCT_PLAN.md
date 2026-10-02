@@ -2466,3 +2466,29 @@ Lewis should follow the household's configured governance policy rather than imp
 
 ### Product principle
 **Budget models the household's agreed financial governance; it does not dictate it.** Security, provenance and auditability remain strong regardless of approval style.
+
+
+## 59. Discovery Decision 048 — Full Owner Transparency for the Household Alpha
+
+### Steve + Kelly household visibility
+The initial household alpha will use **full transparency between Owners**. Steve and Kelly should have the same complete household financial visibility rather than maintaining private Owner-only financial compartments.
+
+Within the household workspace, both Owners should be able to see the shared financial model, including relevant transactions, obligations/debts, accounts, documents/evidence, One-Time Goals, Cash Reserve/Self-Bank activity, household decision history, financial calendar, analytics and Lewis household advice/history.
+
+### Equal visibility + independent authority
+Combined with Decision 047, the initial governance model is:
+**two equal Owners → independent decision authority → complete shared household visibility → full audit trail.**
+
+### Future commercial flexibility
+The underlying commercial architecture may later support configurable privacy boundaries or personal/private financial areas for households that explicitly choose them. That capability should not complicate or appear in the Steve + Kelly alpha unless intentionally enabled in a later release.
+
+Any future privacy model must clearly explain what is household-shared vs private and must not create misleading 'shared' totals that secretly omit financially material obligations without appropriate disclosure/design.
+
+### Lewis conversation model for alpha
+For the initial household, Lewis should operate as a shared household advisor. Material financial facts, recommendations, decisions and resulting model changes should be available to both Owners rather than hidden in private advisor histories.
+
+### Security distinction
+Full transparency **inside the authorized household** does not reduce external privacy/security requirements. Household financial data remains sensitive and must be protected from unauthorized users/services.
+
+### Product principle
+**For Steve + Kelly, Budget is one shared financial truth.** Commercial flexibility can come later without weakening the simplicity of the household alpha.
