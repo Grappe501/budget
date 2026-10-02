@@ -939,3 +939,47 @@ Before expanding scope, Budget 1.0 should become excellent at the core loop:
 **ingest reality → understand the household → calculate true available cash → protect reserves → anticipate obligations → guide daily spending → recover from deviations → optimize debt → explain every recommendation → learn from household corrections.**
 
 The household should then use this system in real life, generating the evidence needed for subsequent UX hardening and eventual commercial product decisions.
+
+
+## 25. Discovery Decision 015 — CSV-First Household Alpha
+
+### First real-data ingestion rail
+The initial Steve/Kelly household alpha will begin with **CSV transaction export(s) from the joint bank account**. Direct bank connectivity is not required to begin real-world use.
+
+This is an intentional speed-to-learning decision: the household can obtain historical transaction data immediately, allowing Budget's categorization, baseline reconstruction, recurring-charge discovery and cash-flow logic to be tested against real finances before financial-account aggregation is added.
+
+### Initial history target
+The importer should support approximately 6–12 months of historical transactions, with the ability to add older/newer exports later. The system should not assume a particular bank CSV schema.
+
+### Source-preservation rule
+Imported financial evidence must be preserved. Budget should retain enough import provenance to distinguish the original source values from normalized/enriched application data.
+
+AI categorization, merchant normalization and user corrections must not destructively rewrite the raw imported record.
+
+### CSV import requirements
+The alpha importer should be designed to support:
+- file upload/drop;
+- preview before committing an import;
+- flexible column mapping for date, description, amount/debit/credit and other available fields;
+- import/source identity and timestamps;
+- validation and clear malformed-row reporting;
+- duplicate detection/idempotent re-import behavior;
+- support for overlapping date-range exports without double-counting;
+- preservation of raw descriptions/amounts/dates;
+- normalized transaction layer separate from source evidence;
+- transaction classification and confidence;
+- user correction and learned household rules;
+- import rollback/recovery where practical;
+- reconciliation summaries so the user can verify what was accepted, skipped or flagged.
+
+### Import safety
+The system should never silently discard or invent financial rows to make an import balance. Ambiguities, unsupported formats and possible duplicates should be surfaced for review.
+
+### Household-alpha workflow
+The first meaningful product loop should become executable early:
+**export bank CSV → import → preserve raw ledger → normalize → classify → identify recurring charges/income/transfers/debt payments → review uncertainties → establish observed baseline → generate first household budget and cash-flow model.**
+
+### Direct bank connectivity deferred
+Live bank aggregation/sync remains an important later capability for the commercial product, but it should not block Budget 1.0 household-alpha development. The architecture should keep imported-source abstractions clean enough that a future bank connector can feed the same normalized ledger without replacing the CSV pathway.
+
+CSV/manual import should remain useful even after connectivity exists for historical backfill, unsupported institutions, troubleshooting and user data portability.
