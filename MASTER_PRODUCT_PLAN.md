@@ -1782,3 +1782,55 @@ It should update as real financial conditions change and remain drillable into t
 
 ### Discovery-process correction
 Future discovery questions should be checked against the complete existing decision record before being asked. Settled concepts should be synthesized into the specification rather than repeatedly re-interviewed. The remaining discovery phase should focus only on unresolved decisions that materially affect Budget 1.0 architecture, behavior, security, onboarding or UX, then transition into specification and build planning.
+
+
+## 45. Discovery Decision 034 — Lewis Financial Triage Mode
+
+### Trigger
+When the forward cash-flow model shows that required/expected outflows cannot be covered through the relevant upcoming income horizon even after ordinary discretionary capacity is removed, Lewis should offer a dedicated **Financial Triage Mode**.
+
+### Objective
+Triage Mode should build a survival/recovery plan designed to get the household through the shortage with the least reasonably modeled long-term damage while preserving household agency.
+
+### Triage classification
+Lewis should organize upcoming cash demands into practical groups such as:
+- essential/critical household needs;
+- contractual/fixed obligations;
+- flexible but necessary spending;
+- discretionary spending that can temporarily pause;
+- obligations whose timing may potentially be changed, but only where terms are known or the user confirms the possibility;
+- unresolved items requiring more information.
+
+### Scenario generation
+Using actual household numbers, Lewis should model multiple recovery paths where meaningful. Potential levers may include:
+- temporarily reducing/pausing discretionary categories;
+- reallocating available flexible spending;
+- using previously approved spend-forward capacity;
+- changing timing of an expense where the household confirms that is permissible;
+- using expected incoming money according to its confidence/timing;
+- identifying a bill/provider that should be contacted before a due date;
+- showing the impact of any exceptional reserve access if the household has separately enabled that option.
+
+Reserve access remains governed by the previously established Reserve Lock and must not appear as an ordinary first-line solution.
+
+### Never invent permission to skip a payment
+Budget must distinguish **cash-flow flexibility** from **contractual/legal permission**. Lewis must not claim that a mortgage, loan, utility, insurance premium, collection payment or other obligation can safely be delayed merely because doing so improves the model. Known terms, verified provider information or explicit user confirmation are required before representing a timing change as permissible.
+
+### Triage output
+A useful Triage Mode should answer:
+1. How large is the projected shortage and when does it occur?
+2. What is driving it?
+3. What spending can safely stop immediately?
+4. What obligations require action/contact?
+5. What realistic recovery options exist?
+6. What does each option do to later pay periods, debt, reserve and safety?
+7. What is the least-damaging modeled path Lewis would recommend?
+
+### Action checklist
+Once the household selects a path, Budget should convert it into a short time-ordered checklist and update the forecast as each action is completed or circumstances change.
+
+### Tone
+Triage Mode should be calm, specific and non-shaming. A shortage is a planning problem to solve, not a moral failure. Lewis should focus attention on the next useful decision rather than presenting an overwhelming wall of negative numbers.
+
+### Product principle
+When the plan breaks, Budget should become **more useful, not more judgmental**. Lewis's job is to expose the shortage early enough to create options and help the household navigate it deliberately.
