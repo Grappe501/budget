@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "pass_id": "P11",
+  "title": "Real-Data Safety Gate",
+  "status": "PREAUTHORIZED",
+  "prerequisites": [
+    "P10"
+  ],
+  "sub_slices": [
+    "P11A",
+    "P11B",
+    "P11C",
+    "P11D",
+    "P11E",
+    "P11F"
+  ],
+  "canonical_authority": [
+    "PRECOMPILED_CONSTRUCTION_SPECIFICATION.md",
+    "LEVEL_10_AUTONOMOUS_CONSTRUCTION_HARDENING.md",
+    "PRE_CONSTRUCTION_FORENSIC_AUDIT_AND_LAYERED_BUILD_HARDENING.md",
+    "PHASE_3_CURSOR_BUILD_PLAN.md",
+    "PHASE_2_TECHNICAL_BLUEPRINT.md",
+    "PHASE_1_PRODUCT_SPECIFICATION.md",
+    "MASTER_PRODUCT_PLAN.md"
+  ],
+  "script_path": "cursor_passes/P11_REAL_DATA_SAFETY_GATE.md",
+  "permissions": {
+    "real_data_allowed": false,
+    "external_network_allowed": false,
+    "destructive_operations_allowed": false,
+    "production_deploy_allowed": false,
+    "money_movement_allowed": false,
+    "bank_connector_allowed": false,
+    "wealth_builder_allowed": false,
+    "self_bank_allowed": false
+  },
+  "operator_gate": "STOP_AFTER_PASS_FOR_REAL_DATA_AUTHORIZATION",
+  "repair_policy": "WITHIN_ACTIVE_PASS_ONLY_NO_DOCTRINE_OR_INVARIANT_WEAKENING",
+  "completion_requires": [
+    "all_required_validation_green",
+    "evidence_bundle_generated",
+    "build_state_updated_by_validator",
+    "handoff_regenerated",
+    "next_slice_generated_or_operator_gate"
+  ],
+  "stop_conditions": [
+    "failed_financial_invariant",
+    "canonical_contract_conflict",
+    "security_boundary_ambiguity",
+    "unauthorized_real_data",
+    "destructive_effect_not_preapproved",
+    "required_fix_outside_pass_scope"
+  ]
+}
