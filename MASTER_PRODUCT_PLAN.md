@@ -2585,3 +2585,68 @@ The autonomy system should be policy-driven so future releases can expose additi
 
 ### Product principle
 **Lewis can keep the books intelligent without taking over the household. Maintain automatically; advise proactively; ask before consequential action.**
+
+
+## 62. Discovery Decision 051 — Budget Alpha Definition of Alive
+
+### The first usable household alpha
+Budget becomes **alive** when Steve can import the household's real bank CSV and the system successfully turns that raw history into a trustworthy, useful current financial picture.
+
+The Alpha Definition of Alive is:
+
+> **Import the real household bank CSV → reconstruct approximately the last year → identify income, bills, recurring spending and meaningful categories → let the household quickly correct what Budget gets wrong → learn from those corrections → open into a clear dashboard that tells the household where it stands today, what it can safely spend through the next payday, what is coming next, and what Lewis recommends doing first.**
+
+### Required Alpha Alive capabilities
+The first genuinely usable alpha therefore requires, at minimum:
+- robust CSV import/mapping/validation/deduplication and raw-source preservation;
+- normalized transaction ledger;
+- initial income/expense/transfer/recurring-pattern classification;
+- merchant normalization and household learning rules;
+- fast human review/correction loop;
+- observed household baseline reconstructed from real history;
+- detection/modeling of material recurring bills and expected timing;
+- forward cash-flow through the next known income event;
+- protected-reserve handling sufficient to calculate spendable cash under the household's configured rules;
+- True Available Cash / daily safe-to-spend calculation;
+- compact upcoming financial-calendar view;
+- current safety/trajectory summary;
+- Lewis briefing with the most important grounded next recommendation;
+- evidence/drill-down sufficient for the household to understand why key numbers/recommendations exist;
+- reconciliation/trust controls sufficient to surface material disagreement with the real account balance.
+
+### What does not block Alpha Alive
+Capabilities already approved for later development do **not** have to be complete before Budget is considered alive, including:
+- full financial-document intelligence;
+- direct bank connectivity;
+- direct bill pay/money movement;
+- future authorized subscription cancellation;
+- mature voice capture;
+- complete Self-Bank workflows;
+- long-horizon behavior intelligence requiring accumulated live history;
+- advanced financial-statement depth;
+- deferred Wealth Builder/investment capabilities;
+- commercial multi-household packaging.
+
+These remain part of the product roadmap and architecture, but should not prevent the household from receiving real value early.
+
+### Alpha success test
+The household should be able to look at Budget after importing/correcting real data and answer, with confidence:
+1. **Are we financially safe right now?**
+2. **What can we actually spend before the next payday?**
+3. **What money is already spoken for?**
+4. **What is likely to happen next?**
+5. **Why does Budget believe these numbers?**
+6. **What does Lewis think we should do first, and why?**
+
+If those answers are trustworthy, understandable and genuinely useful, the Alpha is alive.
+
+### Discovery exit gate
+With Decision 051 accepted, **Phase 0 — Product Discovery is considered complete for the initial build.**
+
+New ideas should now be treated as backlog/change-control inputs rather than extending open-ended discovery unless they reveal a material missing requirement.
+
+The next work sequence is:
+**Phase 1 Product Specification → Phase 2 Technical Blueprint → Phase 3 Cursor Build Plan → Phase 4 Household Alpha.**
+
+### Product principle
+**Build the smallest version that can tell the truth about the household and help it make a better decision today. Then compound intelligence from there.**
