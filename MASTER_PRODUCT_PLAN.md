@@ -2245,3 +2245,32 @@ A later technical specification must define whether the Fed upper-bound base is 
 
 ### Product principle
 **Necessity gets cheaper access to household capital; optionality carries greater friction.** In every case, the interest ultimately replenishes the household's own capital.
+
+
+## 54. Discovery Decision 043 — Self-Bank Loan Rates Are Fixed at Origination
+
+### Fixed-rate rule
+Every Self-Bank / Reserve Loan uses a **fixed interest rate for the life of that loan**. It does not automatically reprice when the Federal Reserve later changes its target range.
+
+### Origination calculation
+At loan origination, Budget should:
+1. retrieve/verify the applicable Federal Reserve target range from the authoritative source;
+2. select its upper bound under Decision 042;
+3. add the approved category spread (+0, +2, +4 or +6 percentage points);
+4. present the resulting rate and repayment consequences to the household;
+5. upon confirmation, preserve that resulting APR as the loan's fixed contractual household rate for internal modeling.
+
+### Historical record
+The loan should preserve the Fed target range, upper-bound base rate, effective/source date, category, category spread, final fixed rate and origination date so the calculation remains explainable years later.
+
+Later Fed changes may affect the pricing of **new** Self-Bank loans but do not alter existing loans.
+
+### Lewis explanation
+Lewis should be able to say plainly that the household's rate was set when it borrowed from itself and will not change before payoff.
+
+### Product principle
+**Self-Bank borrowing should be disciplined but predictable.** Once the household agrees to an internal loan, it should know the rate it must repay to its future self.
+
+### Self-Bank rate mechanics status
+With this decision, the core rate mechanics are resolved:
+**Fed target-range upper bound at origination + purpose-category spread = fixed Self-Bank APR for the life of the loan.**
