@@ -1903,3 +1903,49 @@ Document intelligence should follow the low-variable-cost doctrine: extract once
 
 ### Product principle
 Budget should gradually transform an initially inferred household model into an **evidence-backed financial model** without forcing users to become data-entry clerks.
+
+
+## 47. Discovery Decision 036 — Lewis Learning Queue and Progressive Household Completion
+
+### Budget should not require complete setup before becoming useful
+After initial transaction ingestion and the guided interview, Lewis should maintain an internal/user-visible **Things I Still Need to Learn** queue for material gaps in the household financial model.
+
+The household should be able to start using Budget while this model is incomplete. Unknown information should remain explicitly unknown rather than blocking the product or being filled with guesses.
+
+### Learning-gap examples
+Lewis may identify missing evidence/facts such as:
+- a mortgage payment exists but current balance/rate/term is unknown;
+- a debt is visible but APR/minimum payment is unverified;
+- an insurance premium exists but renewal/coverage financial details are unknown;
+- a recurring payment has not yet been identified;
+- a collection/payment-plan withdrawal exists but the underlying obligation is incomplete;
+- an income source is observed but its expected cadence/type is unclear;
+- a recurring bill's contractual due date differs from or is unknown relative to observed withdrawal timing.
+
+### Prioritize by decision value
+The learning queue should not be a generic document checklist. Items should be prioritized according to how much resolving the uncertainty could improve household decisions—for example:
+- impact on safety/cash-flow accuracy;
+- impact on debt-payoff optimization;
+- dollars involved;
+- urgency/upcoming due date;
+- risk of a wrong assumption;
+- relevance to an active household decision;
+- ease of obtaining the missing evidence.
+
+### Contextual asks
+Lewis should ask for missing information at sensible moments and in ordinary language. Example:
+'Next time you have your mortgage statement handy, take a picture for me. I can make the payoff forecast much more accurate.'
+
+The Advisor should avoid repeatedly nagging for the same low-priority information.
+
+### Progressive model maturity
+Budget should be able to communicate model maturity/confidence without frightening users with technical scoring. A financial area can progress conceptually from:
+**discovered → inferred → partially confirmed → evidence-backed.**
+
+Advanced drill-down may expose more detailed confidence/provenance.
+
+### Close the loop automatically
+When a document, transaction correction, conversation or other evidence resolves a learning item, Budget should update the relevant financial object and remove/resolve the queue item automatically where confidence permits.
+
+### Product principle
+**Learn the household over time instead of interrogating it on day one.** Lewis should request the next most useful piece of information when it can materially improve the advice.
