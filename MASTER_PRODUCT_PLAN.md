@@ -2387,3 +2387,54 @@ Past experiments and outcomes should become part of the Household Financial Life
 
 ### Product principle
 **Budget should learn with the household, not dictate to it.** Behavioral improvement should be evidence-seeking, measurable, reversible and increasingly personalized over time.
+
+
+## 57. Discovery Decision 046 — Predictive Seasonal and Irregular Expense Forecasting
+
+### Forecast household life, not just recurring bills
+Lewis should use sufficient household history to predict **likely future expenses and spending patterns that are not contractual recurring bills**.
+
+Examples may include seasonal utilities, animal/feed costs, holiday periods, annual household purchases, travel patterns, vehicle/home maintenance tendencies, school/family cycles or other household-specific rhythms supported by evidence.
+
+### Predictions are not obligations
+Budget must visibly distinguish:
+- confirmed/contractual obligations;
+- scheduled/planned events;
+- recurring inferred events;
+- **predictive expected spending**;
+- uncertain/unresolved possibilities.
+
+Lewis must never present a statistical prediction as a known bill or contractual due date.
+
+### Evidence-driven forecasts
+Forecasting may consider, where available:
+- multi-year seasonal history;
+- recent trend/change in spending level;
+- comparable months/pay periods;
+- merchant/category patterns;
+- known calendar events;
+- household composition/context already provided;
+- verified changes that make older history less representative.
+
+### Confidence and ranges
+Where uncertainty is material, predictions should use understandable confidence/ranges rather than false precision. Advanced drill-down should explain the historical basis for a forecast.
+
+### Forward cash-flow integration
+Material predicted spending should be incorporated into forward cash-flow and True Available Cash conservatively enough to reduce avoidable surprises, while remaining distinguishable from required commitments.
+
+Users should be able to include, modify, dismiss or explain a prediction. Corrections should improve future forecasting.
+
+### Continuous calibration
+As actual transactions arrive, Budget should compare forecast vs reality, update the household model and measure forecast error over time. Lewis should become better calibrated as more household history accumulates.
+
+### Proactive Lewis behavior
+Lewis should surface meaningful forecast changes when they affect decisions, e.g.:
+'Your summer electric spending has historically been higher, so I have provisionally increased the July forecast. Here is what that does to your available cash.'
+
+Avoid noisy commentary for immaterial predicted changes.
+
+### Scenario connection
+Predictions should participate in conservative/expected/upside or other appropriate forecast scenarios so the household can distinguish what is known from what is likely.
+
+### Product principle
+**A good budget should remember what tends to happen before the household has to remember it.** Lewis should use history to reduce financial surprises without pretending predictions are facts.
