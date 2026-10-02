@@ -2765,3 +2765,14 @@ The local operator workflow is now: pull the repository, open the repo root in C
 **Construction planning status: FROZEN / COMPLETE.**
 
 No sixteenth construction pass may be invented by Cursor. Architectural/product changes require controlled deviation rather than implementation-time improvisation.
+
+
+## 70. One-Launch Construction + Real-Data Handoff — Complete
+
+The precompiled construction package now includes `REAL_DATA_HANDOFF_PROTOCOL.md`. A single initial Cursor instruction can execute P00–P11, pause for the required operator security confirmations, request the household CSV through Budget's local Import UI or gitignored `local-data/imports/`, establish a local-only real-data authorization that cannot be inherited by another Git clone, execute P12 calibration, and continue automatically through P13 and P14 when gates remain GREEN.
+
+The P12 protocol requires a fresh protected backup before reading the CSV, target-database verification, destructive-command lockout, redacted logging, test/real DB isolation, normal product-workflow ingestion, authoritative balance observation/reconciliation, an exact-in-cents TAC proof without committing real values, synthetic reproduction of generalized bugs, and Git-safe aggregate evidence only.
+
+No additional construction script is expected between P00 and P14. Planned human interactions are operator gates/data confirmations inside the prewritten execution program, not new architecture work.
+
+**Single-launch construction status: READY.**
