@@ -2200,3 +2200,48 @@ Lewis should compare self-financing with relevant alternatives using actual hous
 
 ### Product principle
 **The end state is not merely having no debt. It is building enough household capital and discipline that, where appropriate, the family can finance itself and pay interest back to its own future rather than automatically to someone else.**
+
+
+## 53. Discovery Decision 042 — Final Self-Bank Rate Formula and Four Loan Categories
+
+### Base-rate convention is resolved
+For Self-Bank / Reserve Loans, Budget will use the **upper bound of the Federal Reserve FOMC target range for the federal funds rate** as the household's base rate.
+
+Budget must source the applicable target range from an authoritative Federal Reserve source, preserve the published range/effective date used, and derive the base rate deterministically as the upper bound.
+
+### Four approved Self-Bank categories
+The purpose categories and spreads are:
+
+1. **Critical Emergency — Fed upper bound + 0 percentage points**
+   Examples: major medical crisis, preventing foreclosure/eviction, essential emergency repair, genuine life-changing family crisis.
+
+2. **Essential Need — Fed upper bound + 2 percentage points**
+   Examples: necessary vehicle/down payment, major essential home-system replacement, essential work need.
+
+3. **Planned Improvement — Fed upper bound + 4 percentage points**
+   Examples: vehicle upgrade, home improvement, education or other substantial planned purchase that improves household life/capability but is not a critical emergency.
+
+4. **Lifestyle / Optional — Fed upper bound + 6 percentage points**
+   Examples: optional/recreational purchases, vacation upgrades or other wants that the household elects to self-finance.
+
+Examples are guidance rather than an exhaustive classification list. Lewis should clarify ambiguous purposes before recommending a category.
+
+### Formula
+**Self-Bank annual interest rate = Fed target-range upper bound at the applicable benchmark point + category spread.**
+
+The category spread is measured in percentage points, not as a percentage multiplier.
+
+### Transparent explanation
+Lewis should always show the components separately before confirmation, e.g.:
+**Fed base: X% + Essential Need spread: 2.00 points = Self-Bank rate: Y%.**
+
+The household should never have to reverse-engineer how an internal rate was determined.
+
+### Historical reproducibility
+Each loan record must preserve enough benchmark metadata to reproduce the rate later even after the Fed changes its target range.
+
+### Remaining implementation specification
+A later technical specification must define whether the Fed upper-bound base is captured and **locked at loan origination** or whether active loans reprice when the Fed changes its target range. Do not silently choose this behavior during implementation.
+
+### Product principle
+**Necessity gets cheaper access to household capital; optionality carries greater friction.** In every case, the interest ultimately replenishes the household's own capital.
