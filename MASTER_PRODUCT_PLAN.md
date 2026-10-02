@@ -1,6 +1,6 @@
 # Budget — Master Product Discovery & Build Plan
 
-**Status:** Phases 0–3 complete; Level 10 autonomous pre-construction hardening complete; ready for controlled Phase 4 construction  
+**Status:** Phases 0–3 complete; precompiled construction specification complete; ready to author all 15 Cursor execution scripts before construction  
 **Repository:** Grappe501/budget  
 **Canonical branch:** main  
 **Started:** October 2, 2026
@@ -2735,3 +2735,18 @@ The human roadmap remains Pass 0–14, but machine-level sub-slices may be gener
 **Level 10 pre-construction hardening status: COMPLETE.**
 
 North star: **Budget should not merely be built correctly. It should continuously prove that it is still being built correctly.**
+
+
+## 68. Precompiled Construction Specification — Complete
+
+The final implementation-decision hardening layer is canonical in `PRECOMPILED_CONSTRUCTION_SPECIFICATION.md`.
+
+This specification resolves implementation-time architectural questions in advance so Cursor is not asked to design Budget while coding it. It fixes the authority order of planning documents; technology/runtime rules; repository layout; dependency boundaries; Alpha physical domain spine; money/sign/range/null semantics; household time/period behavior; import/deduplication policy; classification precedence; bulk correction safety; recurrence semantics; conservative forecast inclusion; same-day event ordering; exact True Available Cash contract; safety/reconciliation/Data Trust contracts; coherent Financial Snapshot generation; transactional outbox/recompute behavior; authorization/capability/route/UX/vocabulary/Lewis/AI-cost/security/backup/logging/health/testing contracts; test-environment safety; build-state behavior; pass-script format; prewritten Pass 0–14 scopes; rollback/dependency/ADR policy; and explicit lists of decisions Cursor may and may not make.
+
+The remaining unknowns are household facts such as actual balances, exact terms and exact income amounts. They are data to be learned by the application, not unresolved build architecture.
+
+The next and final planning deliverable before local construction is to author `CURSOR_15_PASS_EXECUTION_PACKAGE.md` and the 15 individual Cursor pass scripts/manifests in advance. Once those are committed, construction planning freezes except through operator-approved change control.
+
+**Precompiled specification status: COMPLETE.**
+
+Final rule: **Do not ask Cursor to design Budget while building Budget. Cursor executes contracts, proves gates, reports evidence, and stops when human authority is required.**
