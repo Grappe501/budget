@@ -825,3 +825,37 @@ Openness must be opt-in. Adding a household member should not automatically expo
 
 ### Architectural implication
 Authorization must be enforced at the data/action layer, not merely by hiding interface elements. Household membership, roles and permissions therefore belong in the foundational security/domain architecture.
+
+
+## 22. Discovery Decision 012 — Active Overspend Recovery and Reserve Lock
+
+### Active recovery behavior
+Budget should respond actively when actual spending breaks the current plan. An overage should trigger a recalculation and recovery workflow rather than merely displaying a red negative category.
+
+The recovery experience should explain:
+- amount of the overage;
+- current-period cash impact;
+- which future obligations/capacity are affected;
+- viable ways to repair the plan;
+- consequence of each proposed repair.
+
+### Recovery sources
+Budget may propose reallocating remaining discretionary capacity or other household-approved flexible spending. It should also support **spend-forward**: intentionally consuming spendable capacity from the next income/pay period.
+
+If the household spends forward by $X, the next pay period must visibly inherit that $X burden before the decision is accepted. Budget should show the resulting next-period true available cash and any safety implications.
+
+### Protected reserve is NOT a default recovery source
+Protected cash reserves must be excluded from ordinary overspend-repair options by default. The product should behave as though that money is unavailable for routine spending.
+
+Using reserve funds as an overspend source should require a household owner/admin to explicitly enable reserve-access functionality. The default setting is **OFF**.
+
+Even when reserve access is enabled, a reserve withdrawal should be a deliberate action with clear impact on runway/resilience and an audit record; it should not become a one-click suggestion for routine overspending.
+
+### Behavioral design principle
+Budget should create constructive friction around breaking long-term protections while making ordinary plan repair easy to understand. The goal is not punishment or shame; it is to make the financial tradeoff visible at the moment of decision.
+
+### Scenario example
+If a category is $50 over budget, Budget can show repair paths such as reducing another flexible category, reducing remaining discretionary cash, or carrying $50 into the next pay period. If spend-forward is selected, the next pay period's available amount is reduced by $50 immediately in the forecast. Protected reserve is absent from these choices unless an owner has previously enabled reserve access.
+
+### Permission implication
+Reserve-access settings are financially consequential household controls and belong to the owner/admin permission layer. Non-owner household members should not be able to enable protected-reserve spending unless specifically granted that authority.
