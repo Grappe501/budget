@@ -983,3 +983,55 @@ The first meaningful product loop should become executable early:
 Live bank aggregation/sync remains an important later capability for the commercial product, but it should not block Budget 1.0 household-alpha development. The architecture should keep imported-source abstractions clean enough that a future bank connector can feed the same normalized ledger without replacing the CSV pathway.
 
 CSV/manual import should remain useful even after connectivity exists for historical backfill, unsupported institutions, troubleshooting and user data portability.
+
+
+## 26. Discovery Decision 016 — The First-Run Financial Reveal
+
+### Desired first-run moment
+The household alpha should create immediate value from a single historical bank CSV. After approximately one year of transactions is ingested, Budget should attempt to reconstruct and present a recognizable financial operating model of the household rather than merely showing a transaction table.
+
+The desired experience is essentially:
+**upload one bank history → Budget reconstructs how the household financially operates → user reviews/corrects → a working budget is already populated.**
+
+### First-run analysis
+From transaction history, Budget should attempt to identify/propose:
+- recurring income and approximate pay rhythm;
+- recurring payments and subscriptions;
+- likely bill/payment timing based on observed transaction dates;
+- merchant/payee identity where reasonably inferable;
+- spending categories/subcategories;
+- likely debt payments/transfers versus ordinary spending;
+- utilities and other household obligations;
+- variable recurring expenses and approximate ranges;
+- monthly/annual spending patterns;
+- unusual or unresolved transactions requiring human review.
+
+### Automatically populated financial calendar
+Budget should turn detected recurring activity into a proposed forward financial calendar showing, where supported by evidence:
+- who/what is paid;
+- typical amount or amount range;
+- observed payment/withdrawal timing;
+- recurrence frequency;
+- proposed category;
+- confidence/status.
+
+Observed withdrawal timing must not be mislabeled as a contractual due date. A true due date becomes authoritative only when supported by a statement, bill terms or user confirmation.
+
+### Automatically populated observed budget
+After analysis and review, Budget should generate a first working budget from historical reality. The user should not face a blank category form after uploading data.
+
+The initial budget should expose both recurring fixed/semifixed obligations and variable spending baselines so the household can see where money has actually been going before setting targets.
+
+### Confidence and review layer
+Every inferred financial fact should carry an appropriate provenance/confidence state. The first-run experience should separate:
+- high-confidence observed patterns;
+- probable patterns needing quick confirmation;
+- unresolved/ambiguous items requiring user knowledge.
+
+The review experience should focus attention on financially meaningful uncertainty rather than asking the user to approve hundreds of obvious rows one at a time.
+
+### Household financial breakdown
+The reveal should summarize the historical period in understandable household terms, including income observed, major spending categories, recurring obligations, debt-payment patterns, subscriptions/recurring charges, average cash-flow direction and other evidence needed to form the initial household model.
+
+### Product success criterion
+A successful first-run experience should make the user feel that Budget **understood their financial life from the evidence they already had**, substantially reducing setup work. The first reveal must remain auditable: every conclusion should be drillable back to the transactions/patterns that caused Budget to propose it.
