@@ -488,3 +488,68 @@ The product now needs to distinguish at minimum:
 - planned obligations not yet active.
 
 Debt payoff planning must account for both mathematical optimization and real cash-flow constraints. No recommendation should assume that an extra payment is beneficial if it creates an unsafe near-term cash position.
+
+
+## 15. Discovery Decision 005 — Reality-First Budget Reconstruction and Wealth Pathway
+
+### Budgeting philosophy
+Budget will be **reality-first rather than blank-sheet-first**. The preferred onboarding experience is to ingest approximately 6–12 months of actual household financial transactions and reconstruct how the household truly operates before asking the user to design an ideal budget.
+
+### Proposed onboarding flow
+1. Import historical bank/financial transaction records.
+2. Preserve the raw source record.
+3. Normalize merchant/transaction descriptions without overwriting the original evidence.
+4. Detect transfers, reimbursements, income, debt payments and likely recurring transactions so they are not incorrectly treated as ordinary consumption.
+5. AI proposes spending categories/subcategories and likely recurring obligations.
+6. Assign confidence to classifications.
+7. Present a human review queue, prioritizing uncertain, high-dollar, unusual and financially consequential transactions rather than forcing unnecessary review of every obvious item.
+8. User confirms/corrects classifications and merchant identities.
+9. Store household-specific rules from confirmed corrections so future imports improve.
+10. Calculate the observed household baseline from approved data.
+11. Generate a proposed forward budget from actual behavior.
+12. Recommend specific changes and show their projected effects before the household accepts them.
+
+### AI categorization doctrine
+AI categorization is advisory until confirmed or governed by an established household rule. The system should preserve:
+- raw imported description;
+- normalized merchant;
+- proposed category;
+- confidence;
+- reason/evidence where useful;
+- user correction;
+- resulting household categorization rule;
+- audit history.
+
+This allows Budget to learn without making opaque changes to authoritative financial records.
+
+### Bill/debt enrichment after discovery
+A recurring payment discovered in transaction history can begin as a lightweight financial object and later be enriched through a deep-dive workflow with information such as creditor/provider, principal or current balance, APR/interest rate, minimum payment, due date, remaining term/payments, payoff amount/date, autopay status, source statement/document, and other applicable terms.
+
+Not every recurring charge needs debt fields; the object model must distinguish subscriptions, utilities, insurance, debt service and other obligations.
+
+### From observed budget to target budget
+Budget should maintain both:
+- **Observed baseline:** what the household has actually been doing; and
+- **Target plan:** what the household chooses to do next.
+
+The product should never rewrite history to make past spending resemble the target budget. Progress comes from comparing future actual behavior with the chosen plan.
+
+### Wealth Pathway
+The long-term objective extends beyond avoiding financial distress. Budget should help the household move through progressively stronger financial states—from cash-flow control, through resilience and debt reduction, toward asset/wealth accumulation.
+
+The AI should not impose a universal definition of the 'best way to wealth.' It should optimize scenarios against household-selected goals, constraints, risk preferences and priorities, using transparent calculations and assumptions.
+
+Candidate pathway decisions may include:
+- spending reductions;
+- recurring-charge elimination;
+- emergency/resilience reserves;
+- debt payoff sequencing;
+- accelerated principal payments;
+- cash-flow released by completed obligations;
+- business-income scenarios;
+- future savings/investment allocation once appropriate.
+
+For each meaningful recommendation, Budget should show **why**, the numbers/assumptions used, expected benefit, important tradeoffs, effect on cash safety/runway, and alternatives where materially different strategies exist.
+
+### Product UX implication
+A major commercial differentiator should be **low-friction financial onboarding**: instead of asking a new user to remember and manually construct their entire financial life, Budget reconstructs a proposed model from their real transaction history and asks them to correct only what needs human knowledge.
