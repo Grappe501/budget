@@ -286,3 +286,56 @@ Before meaningful financial decisions, Budget should be capable of comparing the
 - downstream debt/bill obligations where applicable.
 
 This establishes a core product rule: **Budget should forecast the consequence before the household commits to the financial move.**
+
+
+## 12. Discovery Decision 003 — Income Ledger and Six-Month Income Pipeline
+
+Budget must model both **income received** and **income expected/planned over at least the next six months**. Forecast income must not be treated as equally certain.
+
+### Known household income patterns
+Initial household use cases include:
+- Kelly's salaried employment, paid every other Friday;
+- detailed paycheck composition when available, including gross pay, taxes, insurance and other deductions, so the system can reconcile gross compensation with actual household cash received;
+- a variable bonus generally available approximately quarterly;
+- Steve's campaign-season income, including its applicable start/end window;
+- mileage and similar reimbursements;
+- prospective SaaS/product income from the planned Elves Tribal software launch;
+- irregular software/project payouts associated with work performed when funding/projects are available.
+
+Amounts and detailed structures remain to be entered later.
+
+### Income classification requirement
+Incoming cash must be classified by economic meaning. At minimum the model should distinguish:
+- earned/ordinary household income;
+- variable compensation/bonus;
+- temporary or time-bounded income;
+- business/product revenue versus personal take-home income;
+- reimbursement/expense recovery;
+- irregular/project income;
+- prospective/planned income not yet received.
+
+A reimbursement must not automatically inflate household earnings because it may simply offset an earlier household-funded expense. Business revenue must not automatically be treated as personal spendable income because costs, taxes, retained business cash, and owner compensation may need to be separated.
+
+### Income confidence model
+Future income should carry a confidence/status rather than being silently included as guaranteed cash. Candidate states include:
+- received/reconciled;
+- committed/high-confidence;
+- expected;
+- variable/range-based;
+- prospective/opportunity;
+- excluded from safety baseline.
+
+The exact vocabulary will be refined later. The Financial Safety Engine should default to conservative assumptions and make clear which future income is included in each projection.
+
+### Six-month income pipeline
+Budget should provide a forward income view showing expected timing, expected amount or range, source, type, confidence, recurrence/end date, and actual receipt when it occurs.
+
+Forecasts should support at least a conservative case, expected case, and upside/scenario case without presenting uncertain future revenue as fact.
+
+### Paycheck intelligence
+When paycheck details are supplied, Budget should be capable of tracking gross compensation through deductions to net deposit. This creates future opportunities to analyze taxes, insurance, benefits, withholding, and potential household-level changes while preserving source records.
+
+### SaaS/business boundary
+The planned Elves Tribal SaaS revenue introduces a future requirement to distinguish **business economics from household economics**. Budget should eventually model how business revenue, business expenses, taxes/reserves, and owner distributions/compensation flow into the household without commingling the concepts.
+
+The exact business structure and tax treatment are deliberately unresolved and should not be assumed by the application or AI.
