@@ -1365,3 +1365,46 @@ Household financial memory is also part of the low-AI-cost strategy. Once a tran
 ### Long-term experience target
 As the household uses Budget, the amount of manual categorization should fall substantially. The desired trajectory is:
 **first import requires meaningful review → Budget learns corrections → future imports need fewer confirmations → routine household activity becomes largely self-organizing while anomalies still receive attention.**
+
+
+## 35. Discovery Decision 025 — Retroactive Learning and Whole-History Corrections
+
+### Corrections can repair the financial model backward and forward
+When a user discovers that a learned merchant/category rule is wrong, Budget should support correcting the matching historical transactions **and** updating the future household rule in one deliberate action.
+
+### Correction scope
+The correction workflow should make scope explicit. Useful choices include:
+- this transaction only;
+- matching historical transactions only;
+- this transaction and future rule;
+- **all matching history plus future rule**.
+
+For Steve's household, the desired default capability is the final option: when the classification truly was wrong, Grandfather should make it easy to fix everything.
+
+### Preview before bulk correction
+Before applying a historical bulk change, Budget should show what it believes matches—for example the number of transactions, date range and aggregate dollars affected—and explain the proposed before/after classification. Ambiguous matches should be separable from high-confidence matches.
+
+### Derived data must recalculate
+A historical correction should propagate through dependent household intelligence, including where applicable:
+- category totals and historical averages;
+- observed/target budgets;
+- spending trends;
+- recurring-pattern analysis;
+- forecasts;
+- true-available calculations when relevant to the affected period/model;
+- Advisor recommendations and comparisons that depended on the prior classification.
+
+### Immutable source, editable interpretation
+The raw imported bank record must remain preserved. Budget changes the household's **interpretation** of that source record rather than silently rewriting the original financial evidence.
+
+### Audit trail and reversibility
+Bulk corrections should record who/what initiated the change, the prior interpretation, the new interpretation, affected records and applicable learned-rule change. The architecture should support undo/reversal of an erroneous bulk correction.
+
+### Grandfather interaction
+A conversational correction can sound like:
+'I found 14 matching transactions totaling $1,860. They're currently classified as Groceries. I can move all 14 to Animal Feed and remember Animal Feed for this merchant from now on. Want me to fix the past and future?'
+
+All counts and dollar amounts in production must be generated from actual matching records, not invented by AI.
+
+### Product principle
+Users should not be trapped by early mistakes made while Budget is learning the household. Better information should improve both the historical model and future automation while preserving a trustworthy record of what changed.
