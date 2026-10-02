@@ -1451,3 +1451,40 @@ A detected increase should be able to lead into a decision workflow: inspect his
 
 ### Product principle
 Small recurring increases are easy for households to miss because each individual transaction may look harmless. Budget should make cumulative cost creep visible before it quietly becomes a significant permanent reduction in household cash flow.
+
+
+## 37. Discovery Decision 027 — Household Negotiation Assistant and Savings Resolution Loop
+
+### Detection should lead to resolution
+When Budget identifies a meaningful increase or unnecessary recurring cost, Grandfather should be able to help the household act on it rather than stopping at an alert.
+
+### Negotiation packet
+For an eligible bill/service, Budget should be able to assemble a concise evidence-backed packet containing available facts such as:
+- current recurring amount;
+- historical amounts and when a change first appeared;
+- amount/percentage of increase;
+- estimated 12-month impact if the current run rate continues;
+- payment history visible in household records;
+- known service/plan facts the household has confirmed;
+- prior notes or negotiations;
+- the household's desired outcome.
+
+### Conversation preparation
+Grandfather can turn the packet into a simple call/chat preparation guide: what changed, what to ask the provider to explain, what outcome to request, questions to ask about lower-cost plans/discounts, and which facts from the household record are useful to mention.
+
+It must not invent competitor pricing, provider policies, contractual rights, cancellation terms or available discounts. External/current claims require a verified source when that capability is later added.
+
+### User-controlled action
+Budget may prepare, coach and track a negotiation, but provider calls, cancellations, plan changes, contractual commitments and other consequential external actions remain user-controlled unless a later explicitly authorized action layer is designed with appropriate confirmation, security and audit controls.
+
+### Resolution tracking
+A cost-creep event should support a lifecycle such as:
+**detected → reviewed → action planned → contacted → outcome recorded → new recurring amount confirmed → household forecast updated.**
+
+### Measurable value
+Budget should track verified financial outcomes attributable to completed household actions where the evidence supports doing so. Examples include reduced recurring run rate, avoided future recurring cost, canceled subscription cost and negotiated savings.
+
+A potential user-facing metric is **Budget Helped You Save**, but calculations must distinguish realized/verified savings from projected annualized savings and must avoid claiming causation when it cannot be supported.
+
+### Product principle
+Grandfather should help close the loop from **notice → understand → prepare → act → verify → update the plan**. The objective is not merely better financial reporting; it is helping the household improve its actual financial position.
