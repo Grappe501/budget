@@ -3,7 +3,7 @@
 **Status:** PREWRITTEN / execute only when build state marks P12 READY
 
 ## Mission
-Only after explicit operator authorization, import and calibrate Steve/Kelly household data locally through product workflows. Never commit sensitive details. Verify mapping, counts, high-materiality classifications, recurring income/bills, reconciliation, reserve, next income, forecast and TAC against manual checks.
+Only after explicit operator authorization under `REAL_DATA_HANDOFF_PROTOCOL.md`, request/select the Steve/Kelly household CSV locally, import and calibrate household data through product workflows. Never commit sensitive details. Verify mapping, counts, high-materiality classifications, recurring income/bills, reconciliation, reserve, next income, forecast and TAC against manual checks.
 
 ## Mandatory read-first authority
 Read, in order: PRECOMPILED_CONSTRUCTION_SPECIFICATION.md; LEVEL_10_AUTONOMOUS_CONSTRUCTION_HARDENING.md; PRE_CONSTRUCTION_FORENSIC_AUDIT_AND_LAYERED_BUILD_HARDENING.md; PHASE_3_CURSOR_BUILD_PLAN.md; PHASE_2_TECHNICAL_BLUEPRINT.md; PHASE_1_PRODUCT_SPECIFICATION.md; MASTER_PRODUCT_PLAN.md; build/build_state.json and build/next_slice.json when they exist.
@@ -19,10 +19,10 @@ Do not start the next parent pass unless F is GREEN and next pass is READY.
 Generate/update latest validation report, latest slice report, build state, current handoff, next slice, BUILD_PROGRESS and generated inventories. Record starting/ending commit, changed paths, migrations, invariants/tests, commands/results, Golden Household result where available, architecture/security results, blockers and rollback checkpoint. Commit only after green validation.
 
 ## Pre-authorized sub-slices
-A: verify signed operator gate and fresh backup; create non-sensitive calibration checklist. B: operator supplies local CSV outside Git; run import through UI/services without code shortcuts. C: resolve review/rules/recurrence/income/bills through product commands; reconcile authoritative balance; rebuild snapshot. D: inspect household UX and Lewis only after deterministic outputs trusted. E: manually cross-check critical TAC/forecast components and import counts; run all synthetic regressions unchanged. F: write only aggregate/non-sensitive calibration evidence and mark PROVEN_REAL trust dimensions that are actually proven.
+A: verify local operator authorization created by `REAL_DATA_HANDOFF_PROTOCOL.md`; verify ignored/untracked CSV staging, fresh protected backup, household DB identity, destructive-command lock, redacted logging and test-DB isolation. B: request/accept the CSV through Budget's Import UI or ignored `local-data/imports/`; run normal import workflow without code/SQL shortcuts; report only Git-safe diagnostics. C: resolve review/rules/recurrence/income/bills through product commands; request only minimum unknown facts; obtain/confirm authoritative current BalanceObservation; reconcile; rebuild snapshot. D: inspect household UX and enable Lewis only after deterministic outputs are trusted. E: independently prove TAC exactly in cents without committing real component values; run all synthetic regressions unchanged; sanitize any real-data-discovered bug into a synthetic regression. F: write only protocol-approved aggregate/non-sensitive calibration evidence, mark only truly PROVEN_REAL trust dimensions, commit Git-safe work, mark P13 READY and continue automatically.
 
 ## Pass-specific guardrail
-Never patch code to fit Steve's numbers. General bug fixes must preserve synthetic tests. No real transaction descriptions/amounts/source files in Git reports.
+Follow `REAL_DATA_HANDOFF_PROTOCOL.md` in full. Never patch code to fit Steve's numbers. General bug fixes must preserve synthetic tests. No real transaction descriptions/amounts/source files in Git reports.
 
 ## Validation baseline
 Run every package script applicable at this stage. By P01 onward this converges on `npm run typecheck`, `npm run lint`, `npm run test`, architecture/contracts validation, and pass-specific integration/E2E suites. By later passes include Golden Household, calculation vectors, isolation, failure injection, leak/security and AI evals as applicable. Never claim a command ran if it does not yet exist; P00/P01 must create the scripted validation surface specified by canonical contracts.
