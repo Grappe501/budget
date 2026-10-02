@@ -1541,3 +1541,45 @@ When a recurring charge actually stops, Budget can update future cash-flow proje
 
 ### Product principle
 Recurring expenses should be treated as continuing household decisions. Grandfather's role is to make those decisions visible, intentional and easy to revisit—and eventually, where safely authorized, easier to execute.
+
+
+## 39. Discovery Decision 029 — Whole-Household Opportunity Hunting
+
+### Grandfather should search for improvement opportunities across all spending
+Budget should proactively analyze the household's full spending history for patterns that may offer meaningful opportunities to improve cash flow, debt progress, safety or goal achievement—even when no transaction is technically erroneous and no bill has increased.
+
+### Candidate opportunity patterns
+The opportunity engine may examine patterns such as:
+- repeated small purchases that become large in aggregate;
+- convenience-store/convenience premiums;
+- frequent dining/takeout patterns;
+- category creep over time;
+- duplicate/overlapping services;
+- recurring discretionary spending;
+- unusually expensive merchant/category patterns relative to the household's own history;
+- avoidable fees where supported by the records;
+- spending clusters that materially affect an active goal;
+- categories where a modest reduction would create meaningful annual capacity.
+
+### Household-relative, not moralistic
+Budget should not label spending as 'waste' merely because it is discretionary. The Advisor should first establish the observed pattern and its financial consequence, then let the household decide whether the spending is worth the tradeoff.
+
+### Opportunity framing
+A useful Grandfather interaction is:
+**what I noticed → what it costs over time → why it matters to your current goals → a realistic change option → what that change would accomplish → you decide.**
+
+For example, instead of 'stop buying snacks,' Grandfather might explain that a particular pattern totals $X over a year and show what reducing it by 20%, 40% or another realistic amount would do to debt payoff or available cash.
+
+All production figures must come from actual household records and deterministic scenario calculations.
+
+### Small-change scenarios
+Grandfather should favor practical scenarios over all-or-nothing deprivation. Where appropriate, it can model partial reductions and show the corresponding financial result, allowing the household to choose a level that is sustainable.
+
+### Prioritization
+Opportunities should be ranked internally for relevance using factors such as dollars recoverable, ease of change, persistence, effect on active goals and household financial condition. The user experience should avoid overwhelming the household with trivial suggestions.
+
+### Learning from rejection
+If the household says a spending pattern is intentional and worth keeping, Budget should remember that decision and reduce repetitive prompting unless the pattern materially changes or the household's financial situation makes it newly significant.
+
+### Product principle
+The Advisor is not a spending judge. Its job is to reveal **opportunity cost that is otherwise hard to see** and help the household decide which tradeoffs are worth making.
