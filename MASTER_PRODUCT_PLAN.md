@@ -1630,3 +1630,65 @@ Milestones may include debt payoff, reserve thresholds, improved runway, success
 
 ### Product principle
 Budget should make progress emotionally visible **and financially productive**. A win should feel good, teach the household what changed, and prevent newly freed cash from quietly disappearing into lifestyle drift unless the household intentionally chooses to use some of it that way.
+
+
+## 41. Discovery Decision 031 — Progressive Disclosure from Simple Household View to Financial-Statement Depth
+
+### Governing UX principle
+Budget should be **simple at first glance and exceptionally deep on demand**. The default experience must show only the information needed to understand the household's immediate financial position and next useful action. Detailed financial data should remain available through deliberate drill-down rather than competing for attention on the primary screen.
+
+### Layered information architecture
+A candidate depth model is:
+
+**Layer 1 — Household glance**
+- Are we financially safe right now?
+- true available cash;
+- what must be covered before next income;
+- current trajectory;
+- one/few material Advisor items;
+- major progress/milestones.
+
+**Layer 2 — Explanation / quick detail**
+Accessible through tap, button, dropdown, drawer, modal/popover or equivalent context-appropriate interaction. Explains what a number means, what changed and the major components behind it.
+
+**Layer 3 — Dedicated analysis page**
+Full view for a domain such as debt journey, spending category, bill, income, reserve, subscriptions, goals or cash-flow timeline.
+
+**Layer 4 — Evidence and model detail**
+Underlying transactions, classifications, assumptions, calculations, source records, historical comparisons and scenario mechanics.
+
+**Layer 5 — Advanced financial view**
+For financially sophisticated users, Budget should eventually support household financial reporting approaching ledger/financial-statement depth, including appropriate income/expense reporting and a P&L-style view where the underlying household data supports it.
+
+### Debt-free journey as drill-down
+The complete road-to-debt-free timeline should be available as a dedicated drill-down rather than crowding the main dashboard.
+
+It should be able to compare scenarios such as:
+- current trajectory if behavior/allocations remain materially unchanged;
+- recommended payoff pathway;
+- alternative pathways created by additional monthly capacity;
+- payoff cascade as each obligation ends;
+- reserve growth alongside debt reduction;
+- estimated consumer-debt-free date under each modeled scenario.
+
+All timelines and savings estimates must be derived from known balances, rates/terms where available, payments, cash-flow rules and explicit assumptions. Missing data should be visible rather than silently invented.
+
+### Living timeline
+The debt-free pathway should recalculate when material household facts change, including payments, balances, interest terms, income, spending, reserve rules, newly discovered obligations or user-selected allocations. Grandfather should explain significant changes to the projected timeline.
+
+### 'Every number has a why'
+Important summary values should be inspectable. The user should be able to move naturally from a simple number to its explanation, then to its components, then to source-level evidence without needing to understand accounting terminology.
+
+### Dual-audience design
+Budget must work for someone intimidated by financial software **and** remain useful to a financially sophisticated user. This should be achieved through progressive disclosure, not separate simplistic and professional products.
+
+The beginner is never forced into advanced detail. The banker/accountant-level user is never prevented from reaching it.
+
+### Financial reporting architecture implication
+The domain/data model should preserve sufficient structure and provenance to support deeper reporting later. The product should not fake accounting precision from incomplete categorization. P&L-style and other advanced views should clearly define their basis, included/excluded flows and treatment of transfers, reimbursements, debt principal, interest and other non-simple expense movements.
+
+### Mobile simplicity
+Because routine household use is expected to happen heavily on a phone, Layer 1 and common Layer 2 interactions should remain highly legible, touch-friendly and low-density. Deep analytical pages may expose substantially more information while retaining clear navigation back to the simple household view.
+
+### Product principle
+**Complexity belongs underneath the interface, not on top of the user.** Budget should let someone understand their finances in seconds and, when desired, investigate the same financial model deeply enough to satisfy a sophisticated financial user.
