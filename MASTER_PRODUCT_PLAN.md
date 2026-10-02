@@ -645,3 +645,47 @@ This is a sequencing priority rather than a claim that every dollar must follow 
 Investment planning/wealth deployment will become a major second-stage component after the household's debt-management foundation is functioning. The current product-discovery/build effort should architect clean extension points for investment assets and future wealth strategy without allowing investment functionality to distract from the immediate debt/cash-flow mission.
 
 The future investment layer should be treated as a distinct planning and, if ever enabled, action domain with its own suitability, risk, data and authorization requirements.
+
+
+## 18. Discovery Decision 008 — True Available Cash and Paycheck-to-Paycheck Envelope
+
+### Primary everyday spending number
+The household's primary spending figure should be **True Available Cash through the next income event**, not the raw checking-account balance and not merely a monthly category budget.
+
+Conceptually:
+**usable cash on hand − protected reserve amount − required obligations before next income − expected normal/necessary spending before next income = true available cash.**
+
+The exact production formula must account for transaction state, timing, known upcoming inflows/outflows and user-confirmed assumptions rather than treating every displayed bank balance as settled cash.
+
+### Pay-period planning horizon
+Everyday cash management should be organized around the next meaningful household payday/income event. The interface should show:
+- actual account cash;
+- protected reserve excluded from spending calculations;
+- obligations that must clear before the next payday;
+- expected ordinary/necessary spending through that date;
+- true discretionary/available cash remaining;
+- projected ending cash immediately before the next income arrives.
+
+Users must be able to drill into the calculation and see exactly what is consuming the difference between bank balance and true available cash.
+
+### Forward borrowing / pushing an expense
+The household may intentionally choose to defer an obligation or effectively consume capacity from the next pay period. Budget should support modeling that choice rather than pretending it did not happen.
+
+If a decision pushes $X of pressure into the next pay period, the next period should visibly inherit that burden (for example, beginning with a negative carry-forward or equivalent obligation), and the current decision view should show the future consequence before confirmation.
+
+### Decision-against-a-baseline principle
+A core UX requirement is that users can always see **what they are making a decision against**. Scenario changes must preserve the original/current plan as a comparison baseline so the household can understand:
+- what changed;
+- how much cash becomes available now;
+- what obligation moved or changed;
+- what future period absorbs the consequence;
+- whether the change affects safety, reserves or debt progress.
+
+### Cash calendar implication
+Budget needs a forward cash calendar/timeline rather than only monthly totals. Income events, bills, automatic withdrawals, expected necessary spending and user-created scenario changes should be placed in time so the engine can identify temporary cash squeezes that a monthly surplus/deficit calculation would miss.
+
+### Dashboard implication
+The daily command view should make the hierarchy obvious:
+**Bank cash → protected money → committed/needed before payday → TRUE AVAILABLE → projected payday-end position.**
+
+The raw bank balance remains visible for reconciliation, but it should never be presented as synonymous with money that is safe to spend.
