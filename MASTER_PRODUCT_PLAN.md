@@ -1834,3 +1834,72 @@ Triage Mode should be calm, specific and non-shaming. A shortage is a planning p
 
 ### Product principle
 When the plan breaks, Budget should become **more useful, not more judgmental**. Lewis's job is to expose the shortage early enough to create options and help the household navigate it deliberately.
+
+
+## 46. Discovery Decision 035 — Financial Document Intelligence and Evidence-Backed Household Model
+
+### Documents are a first-class evidence source
+Budget should allow household members with appropriate permission to photograph or upload financial documents and use them to enrich the household financial model.
+
+Examples include:
+- credit-card statements;
+- mortgage/loan statements;
+- vehicle financing statements;
+- utility bills;
+- insurance declarations/bills;
+- provider/medical/dental bills;
+- collection or payment-plan correspondence;
+- financing agreements;
+- other household financial records.
+
+### Transactions show behavior; documents show terms
+CSV/bank transaction history primarily establishes what money actually moved and when. Financial documents can provide the contractual/account context behind those movements. Budget should link both evidence types into the same household domain model rather than creating disconnected document storage.
+
+### Extraction workflow
+For an uploaded/photo document, Budget should:
+1. preserve the original source file/image;
+2. identify/document-type and likely related household obligation/account;
+3. extract candidate structured facts;
+4. show confidence/uncertainty and source location where practical;
+5. ask the user to confirm/correct consequential facts;
+6. write confirmed facts into the appropriate financial object;
+7. preserve provenance connecting the fact back to the source document.
+
+### Candidate extracted facts
+Depending on document type, candidate facts may include:
+- provider/lender;
+- statement/account identity using safely masked identifiers;
+- statement period;
+- balance;
+- minimum/required payment;
+- due date;
+- APR/interest rate;
+- interest charged;
+- loan term/maturity information;
+- principal/interest breakdown;
+- recurring premium/payment;
+- policy/coverage dates and selected financial terms;
+- fees;
+- payoff information when explicitly present;
+- payment-plan/collection facts explicitly stated in the document.
+
+### Evidence hierarchy
+Budget should distinguish:
+- **observed** facts inferred from transaction patterns;
+- **extracted but unconfirmed** document facts;
+- **user-confirmed** facts;
+- **source-verified** facts where a document clearly supports the field.
+
+A verified/confirmed fact should generally supersede a prior estimate for forecasting while preserving the historical inference/provenance rather than silently erasing it.
+
+### No invented terms
+AI extraction must not fill missing fields by guessing. If an APR, due date, payoff amount, policy term or other important fact is absent/unclear, Budget should mark it unknown or ask for clarification.
+
+### Sensitive-data handling
+Financial documents may contain highly sensitive information. Product architecture must minimize exposure, avoid displaying/storing unnecessary full account identifiers, enforce household authorization, protect files at rest/in transit in later connected deployments, and maintain auditable access. Raw passwords, authentication secrets and similar credentials must not be treated as ordinary document data.
+
+### Cost-aware extraction
+Document intelligence should follow the low-variable-cost doctrine: extract once, store structured results/provenance, reuse confirmed facts, and avoid repeatedly sending the same document through paid AI processing without a material reason.
+
+### Product principle
+Budget should gradually transform an initially inferred household model into an **evidence-backed financial model** without forcing users to become data-entry clerks.
