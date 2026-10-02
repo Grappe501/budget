@@ -1949,3 +1949,42 @@ When a document, transaction correction, conversation or other evidence resolves
 
 ### Product principle
 **Learn the household over time instead of interrogating it on day one.** Lewis should request the next most useful piece of information when it can materially improve the advice.
+
+
+## 48. Discovery Decision 037 — Household Financial Calendar on the Main Dashboard
+
+### Financial calendar is a core surface
+Budget should maintain a dedicated **Household Financial Calendar** and expose a compact version directly on the main dashboard.
+
+The dashboard treatment must respect the progressive-disclosure doctrine: show only the most relevant upcoming events at a glance, with a tap/drill-down into the complete calendar and projected cash-flow detail.
+
+### Calendar event types
+The calendar should be able to represent known or modeled events such as:
+- paydays and other expected income;
+- mortgage/loan/debt payments;
+- utilities and recurring bills;
+- subscriptions/memberships;
+- insurance payments/renewals;
+- expected reimbursements;
+- planned reserve transfers;
+- planned discretionary/purchase-goal events;
+- projected debt payoff milestones;
+- other confirmed household financial events.
+
+### Confidence and event status
+Calendar events should distinguish actual/confirmed scheduled events from inferred or projected events. Observed recurring timing must not be presented as a contractual due date unless verified.
+
+### Projected balance connection
+The financial calendar should connect directly to the forward cash-flow engine. Where the underlying data supports it, the user should be able to see the projected household cash position after upcoming events and understand which events are driving a squeeze or creating new capacity.
+
+### Dashboard experience
+A compact home card may show the next few material events, next income event, obligations before that income, and/or a short visual cash-flow horizon. It should not attempt to render the entire financial calendar on the first screen.
+
+### Full calendar drill-down
+The dedicated calendar should support intuitive time views appropriate to mobile and desktop, with the ability to inspect an event, its source/assumptions, related bill/debt/income object and projected effect on cash.
+
+### Lewis integration
+Lewis should use the same calendar model when briefing the household. Examples include upcoming cash squeezes, unusually heavy bill periods, expected payoff milestones or safe windows for a planned purchase. Calendar intelligence and Advisor intelligence must not become separate competing forecasts.
+
+### Product principle
+The household should be able to see not only **how much money it has**, but **when money is expected to arrive, when it must leave, and what the resulting cash position looks like over time.**
