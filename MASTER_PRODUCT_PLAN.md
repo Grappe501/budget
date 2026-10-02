@@ -195,3 +195,56 @@ Household model; financial accounts; income; budget philosophy; transaction inge
 **What is the single most important thing you want Budget to tell you when you open it each day?**
 
 This answer will define the product's primary dashboard hierarchy and help establish what Budget is fundamentally optimizing for.
+
+
+## 10. Discovery Decision 001 — Financial Safety Is the North-Star Experience
+
+### Primary question
+The first screen must answer: **Are we financially safe right now, and for how long?**
+
+The product should translate the household's real financial position into an understandable runway such as days, weeks, months, or years of financial safety. This must not be a simplistic bank-balance calculation. It should ultimately consider available cash, expected income, observed spending, required bills, debt obligations, recurring charges, timing of cash flows, and appropriate reserves.
+
+### Dashboard hierarchy
+The primary dashboard should progress naturally from:
+1. current financial safety/runway;
+2. forward projection if nothing changes;
+3. why the projection looks that way;
+4. spending and income breakdown;
+5. upcoming obligations and cash-flow pressure points;
+6. recommended opportunities to improve the trajectory;
+7. drill-downs into the underlying transactions, categories, bills, debts, and recurring charges.
+
+### Baseline / trajectory engine
+Budget should establish the household's actual baseline from real records rather than relying only on a manually entered ideal budget. It should compare income with observed spending and obligations and project what happens if behavior remains substantially unchanged.
+
+The user should later be able to create scenarios and immediately see how changes affect financial runway—for example reducing a category, cancelling a recurring charge, paying off a debt, changing a payment date, receiving different income, or changing savings behavior.
+
+### Spending intelligence
+Every meaningful spending category should be drillable from summary to transactions. The system should help the household understand actual behavior, compare it with the desired plan, identify change opportunities, and see the projected consequence of those changes.
+
+### Bill intelligence
+A bill should become a financial object rather than merely a calendar reminder. Where applicable, its record should support amount, due date, recurrence, payment status, autopay status, terms, remaining payments or balance, interest/fees when relevant, source documentation, and payoff implications.
+
+### Debt elimination planning
+The system should support household debt/payoff planning that shows how eliminating one obligation changes future cash flow and how freed cash can be redirected toward other obligations or goals. Strategies should be modeled transparently rather than presented as unexplained instructions.
+
+### Recurring-charge intelligence
+Budget should detect likely recurring transactions and subscriptions from imported financial activity, group related merchants, surface duplicate or overlapping services, allow the household to identify what each charge actually is, track whether it is still wanted, and model the savings from cancellation.
+
+### Bill-pay operating principle
+The desired end state includes a simple payment experience and eventual autopay management. However, payment initiation and account-connected automation are later secure-integration capabilities.
+
+The system must distinguish at least:
+- scheduled/expected payment;
+- external autopay already configured;
+- recommended payment;
+- user-approved payment;
+- confirmed/reconciled payment.
+
+A future automation layer should understand cash-flow timing well enough to warn when an otherwise normal automatic payment could create a short-term cash problem before expected income arrives. The long-term objective is a household stable enough that routine obligations can safely remain automated.
+
+### Financial coaching doctrine
+The product should progressively make the user more capable at managing household finances. Recommendations should therefore explain the relevant numbers, reasoning, tradeoffs, and projected consequences. The user should be able to inspect the underlying data rather than being asked to trust an opaque AI conclusion.
+
+### Product implication
+The emerging product concept is a **Household Financial Command System**: a system of record, forecasting engine, financial coach, decision simulator, obligation manager, and—only with appropriate future security and authorization—financial action layer.
