@@ -2149,3 +2149,54 @@ Lewis should frame reserve borrowing calmly and concretely:
 
 ### Product principle
 **If the household must use its safety net, the money still belongs to its future self.** Budget should make borrowing from that future explicit, measurable and repayable rather than allowing emergency savings to disappear without a recovery plan.
+
+
+## 52. Discovery Decision 041 — Become the Bank: Tiered Self-Lending Against the Fed Policy Rate
+
+### Long-term financial doctrine
+Budget's debt journey should ultimately help a household move from **borrowing from outside institutions** toward **borrowing responsibly from its own accumulated capital** once it has become debt-free and sufficiently capitalized.
+
+The concept is broader than emergency reserve access. The long-term aspiration is that the household can increasingly **become its own bank**: build protected capital, borrow from itself for appropriate needs, repay itself with interest, and preserve/grow household capital instead of automatically sending borrowing costs to an outside lender.
+
+This remains distinct from the deferred Wealth Builder/investment module. Budget 1.0 should establish the accounting, reserve and internal-loan foundations without expanding into investment portfolio management.
+
+### Federal Reserve policy-rate base
+Steve selected the Federal Reserve's **target range for the federal funds rate** as the external benchmark concept for internal Reserve Loans. The FOMC sets this target range and may change it in quarter-point or other increments.
+
+Implementation still needs one precise deterministic convention for converting the published target *range* into a single base rate for loan calculations (for example, midpoint, upper bound or another explicitly selected rule). Budget must preserve the source, target range, effective date and derived base rate used.
+
+### Tiered internal loan pricing
+Reserve/Self-Bank Loans should be classified by purpose. The interest charged back to the household reserve is:
+
+**selected Fed base rate + category spread**
+
+Steve wants approximately four purpose/risk/necessity categories, with different spreads. The exact four categories and spreads should be finalized separately rather than guessed during discovery.
+
+The intended spectrum is:
+- lowest pricing for severe/life-changing emergencies such as major medical crises or preventing catastrophic housing loss;
+- higher pricing for important/needed but less catastrophic borrowing, such as a necessary vehicle/down-payment scenario;
+- additional categories for progressively more optional uses, with stronger pricing/friction as necessity declines.
+
+The pricing mechanism is behavioral and capital-preservation discipline: all interest is repaid to the household's own protected capital, not treated as profit from an external counterparty.
+
+### Category selection and safeguards
+Lewis may recommend a category based on the stated purpose and known facts, but should show the category and resulting rate before the household confirms the loan. Ambiguous uses should require clarification. The system should preserve the original purpose/category and any later authorized changes for auditability.
+
+The product must not present the internal category labels as legal lending classifications or imply external-bank underwriting.
+
+### Rate changes
+Because the external Fed benchmark can change, Budget must track benchmark history. Whether each Self-Bank Loan locks its base rate at origination or reprices when the Fed target changes remains a specification decision unless separately resolved.
+
+### Self-Bank maturity journey
+The feature should mature with the household rather than encourage premature reserve depletion:
+1. establish visibility/control;
+2. protect and build Cash Reserve;
+3. eliminate expensive outside consumer debt;
+4. reach strong resilience/capitalization;
+5. increasingly evaluate self-financing against outside borrowing when appropriate;
+6. repay household capital with disciplined internal interest.
+
+Lewis should compare self-financing with relevant alternatives using actual household consequences rather than assuming self-borrowing is always best.
+
+### Product principle
+**The end state is not merely having no debt. It is building enough household capital and discipline that, where appropriate, the family can finance itself and pay interest back to its own future rather than automatically to someone else.**
