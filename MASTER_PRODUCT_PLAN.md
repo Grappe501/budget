@@ -1727,3 +1727,45 @@ Lewis should feel like a trusted financial advisor, not a cartoon character or s
 
 ### Product principle
 **Lewis is the interface identity; the Grandfather Approach is the behavioral standard underneath it.**
+
+
+## 43. Discovery Decision 033 — Home Screen: Lewis Briefing + Essential Financial Cards
+
+### Home experience is a blend
+The primary Budget home screen should combine a short proactive **Lewis briefing** with a small set of essential financial cards. It should not force the user to choose between a conversational advisor and a dashboard; Lewis interprets the household, while the cards provide immediate visual grounding.
+
+### Lewis briefing first
+At the top of the experience, Lewis should provide a concise, context-aware briefing focused only on what matters now. Depending on household conditions, that may include:
+- whether the household is safe through the next income event;
+- true available cash;
+- an important change since the last review;
+- an upcoming risk/obligation;
+- a meaningful opportunity;
+- a milestone/win;
+- one recommended next action.
+
+The briefing should remain short enough to understand at a glance. It is an entry point into conversation and drill-down, not a daily financial essay.
+
+### Essential cards immediately underneath
+The first screen should then expose only a handful of high-value cards, potentially including:
+- Financial Safety / runway;
+- True Available Cash;
+- Next Income / obligations before it;
+- Reserve progress;
+- Debt/payoff progress;
+- current spending/budget position;
+- Lewis recommendation/opportunity where appropriate.
+
+Final card composition remains a UX-design decision to validate during prototyping; the home screen should not become a grid of every metric Budget knows.
+
+### Drill-down everywhere
+Cards and meaningful briefing statements should lead naturally into the progressive-disclosure system established in Decision 031: quick explanation first, dedicated page next, evidence/calculation depth beneath that.
+
+### Quiet when nothing needs attention
+Lewis should not manufacture commentary merely to appear intelligent. On an uneventful day, a reassuring concise status is better than unnecessary alerts or advice.
+
+### Mobile-first objective
+A household member should be able to open Budget on a phone and understand the current financial position in seconds, then talk to Lewis or drill into any relevant area without navigating a dense accounting dashboard.
+
+### Product principle
+**Lewis tells you what matters; the dashboard shows you where you stand; drill-down shows you why.**
