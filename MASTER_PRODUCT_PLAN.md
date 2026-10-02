@@ -1408,3 +1408,46 @@ All counts and dollar amounts in production must be generated from actual matchi
 
 ### Product principle
 Users should not be trapped by early mistakes made while Budget is learning the household. Better information should improve both the historical model and future automation while preserving a trustworthy record of what changed.
+
+
+## 36. Discovery Decision 026 — Recurring Bill Change Detection and Cost-Creep Watchdog
+
+### Grandfather watches recurring costs over time
+Budget should learn the normal amount/range and cadence of recurring household bills and proactively identify material changes rather than treating every recurring payment as an isolated transaction.
+
+### Change detection
+For a recurring obligation or subscription, Budget should be able to detect and explain patterns such as:
+- a sudden price increase or decrease;
+- gradual price creep over multiple billing cycles;
+- an expired-looking historical discount pattern;
+- duplicate or newly overlapping recurring charges;
+- a skipped/late/unexpected charge;
+- changes in normal billing cadence;
+- unusual usage-sensitive bills relative to their own historical range.
+
+The system should distinguish observed facts from possible explanations. For example, it may say a promotion **may** have expired, but should not claim that as fact unless supported by source data.
+
+### Annualized impact
+When useful, Grandfather should translate a recurring increase into understandable forward impact—for example, a $27 monthly increase represents approximately $324 over 12 months if the new amount persists.
+
+Annualization is a projection and should be labeled accordingly.
+
+### Bill price history
+Recurring bill objects should retain a time series/history sufficient to show how the household's cost for a service has changed over time. Users should be able to drill from the current bill into historical amounts and source transactions.
+
+### Household cost-creep view
+Budget should eventually aggregate recurring-cost changes so Grandfather can identify which providers/categories are responsible for meaningful increases in fixed household spending over a selected period.
+
+Example interaction pattern:
+'Your recurring household services are costing about $X more per year at their current run rate than they were Y months ago. These are the largest changes.'
+
+All production figures must be calculated from household records.
+
+### Advisor prioritization
+Grandfather should prioritize alerts by materiality rather than notifying on every minor fluctuation. The importance calculation can consider absolute dollar change, percentage change, persistence, annualized effect, household cash position and whether the bill is normally stable or variable.
+
+### Action pathway
+A detected increase should be able to lead into a decision workflow: inspect history/source evidence, confirm whether the change is expected, update the known bill amount, mark as variable/seasonal, or create a household action such as reviewing/canceling/renegotiating the service.
+
+### Product principle
+Small recurring increases are easy for households to miss because each individual transaction may look harmless. Budget should make cumulative cost creep visible before it quietly becomes a significant permanent reduction in household cash flow.
