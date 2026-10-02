@@ -1583,3 +1583,50 @@ If the household says a spending pattern is intentional and worth keeping, Budge
 
 ### Product principle
 The Advisor is not a spending judge. Its job is to reveal **opportunity cost that is otherwise hard to see** and help the household decide which tradeoffs are worth making.
+
+
+## 40. Discovery Decision 030 — Celebrate the Win and Redeploy Freed Cash
+
+### Financial milestones should feel meaningful
+When the household completes an important financial milestone—especially paying off an obligation—Budget should deliberately recognize and celebrate the accomplishment. The experience should reinforce progress without becoming childish, gamified for its own sake, or financially misleading.
+
+A payoff event should immediately transition from celebration into a clear explanation of **what the household can now do with the money that has been freed.**
+
+### Freed-cash event
+When a recurring debt payment ends, Budget should create a structured **freed-cash event** containing the former payment amount/cadence, payoff date, resulting monthly/pay-period capacity and the household decisions made about redeployment.
+
+### 10% payoff-to-reserve rule
+Steve's household wants a specific standing rule:
+**Whenever an obligation is paid off, 10% of the payment amount that has been freed should be redirected to the protected cash reserve, advancing the household toward the one-year resilience goal.**
+
+This is in addition to the broader reserve-first doctrine already established for applicable incoming money. The implementation must define cadence conversions carefully—for example, a monthly former payment should create a corresponding recurring reserve allocation rather than incorrectly treating the entire payment as a one-time deposit.
+
+### Remaining freed capacity
+After the additional 10% reserve allocation, Grandfather should evaluate the remaining freed capacity against the household's current needs and opportunities rather than applying a permanently fixed destination.
+
+Candidate uses include:
+- filling near-term cash-flow gaps;
+- accelerating high-interest or otherwise costly debt;
+- paying off a smaller obligation to release additional monthly cash flow;
+- strengthening an underfunded required category;
+- advancing an approved purchase/household goal;
+- offering some safe discretionary/date/fun capacity when the household can afford it;
+- combinations of the above.
+
+### AI role: scenario generation and explanation
+AI should help identify and communicate sensible candidate strategies, while deterministic financial calculations determine the actual dollars, timelines, interest effects and cash-flow consequences.
+
+Grandfather should be able to say, in substance:
+'You did it. This payment no longer belongs to that debt. Ten percent of the freed payment now strengthens your reserve. Here are the strongest ways we could use the rest, and here is what each one changes.'
+
+### Compare options, don't hide tradeoffs
+The system should model alternatives such as high-interest-first, cash-flow-release-first, gap-filling, discretionary allowance, or blended approaches when relevant. It should explain measurable consequences and let the household choose.
+
+### Compounding payoff momentum
+When freed cash is redirected to another debt and that second obligation is subsequently eliminated, Budget should recognize the larger newly freed amount and repeat the process. This creates a visible household payoff cascade while continuously strengthening reserves through the 10% payoff-to-reserve rule.
+
+### Celebration with substance
+Milestones may include debt payoff, reserve thresholds, improved runway, successful cost reductions and other verified household achievements. Celebrations should immediately connect the achievement to increased freedom/capacity and the next available choices.
+
+### Product principle
+Budget should make progress emotionally visible **and financially productive**. A win should feel good, teach the household what changed, and prevent newly freed cash from quietly disappearing into lifestyle drift unless the household intentionally chooses to use some of it that way.
