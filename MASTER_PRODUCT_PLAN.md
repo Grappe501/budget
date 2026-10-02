@@ -1488,3 +1488,56 @@ A potential user-facing metric is **Budget Helped You Save**, but calculations m
 
 ### Product principle
 Grandfather should help close the loop from **notice → understand → prepare → act → verify → update the plan**. The objective is not merely better financial reporting; it is helping the household improve its actual financial position.
+
+
+## 38. Discovery Decision 028 — Subscription Intelligence and Future Authorized Cancellation
+
+### Recurring-spend inventory
+Budget should maintain a detailed inventory of subscriptions, memberships and other recurring discretionary/semidiscretionary charges discovered from household transaction history.
+
+The goal is to show the household **where recurring money is actually going**, not merely provide a generic subscription category.
+
+### Subscription intelligence
+For each detected recurring charge, Budget should attempt to maintain available/confirmed facts such as:
+- normalized merchant/provider;
+- amount and cadence;
+- first/most-recent observed charge;
+- price history;
+- estimated annual run rate;
+- household classification/category;
+- household member/beneficiary when known;
+- status such as keep/review/cancel/unknown;
+- confidence that the pattern is truly recurring;
+- source transactions/evidence;
+- notes and prior review decisions.
+
+### Periodic subscription review
+Grandfather should periodically surface meaningful recurring-spend reviews rather than allowing subscriptions to disappear into background noise. Reviews can summarize monthly and annualized totals and prioritize unrecognized, unused/questionable, recently increased, duplicative or never-reviewed items.
+
+### Conversational decisions
+The household should be able to answer naturally with outcomes such as:
+- keep it;
+- cancel it;
+- I don't recognize this;
+- we still use it;
+- remind/review later;
+- this belongs to a specific household member/category.
+
+Budget should learn and record those decisions so repeatedly approved services are not needlessly questioned unless something materially changes.
+
+### Cancellation workflow — Budget 1.0
+In the initial product, Budget should support the resolution lifecycle:
+**detect → identify → quantify → household decision → provide cancellation/action guidance → track pending cancellation → verify charge stops → update forecast and savings.**
+
+Budget should not claim a subscription is canceled merely because the user intended to cancel it. Verification should rely on user confirmation and/or subsequent financial evidence.
+
+### Future authorized action layer
+A later product phase may support Budget reaching out to a provider or navigating an authorized cancellation workflow on the household's behalf. This is explicitly a future capability, not a Budget 1.0 requirement.
+
+Any future cancellation execution must include explicit user authorization, clear disclosure of the action being taken, provider/account authentication appropriate to the integration, confirmation before consequential commitments where appropriate, audit history, outcome verification and safe handling of credentials/tokens. Budget should never request that users place raw passwords or sensitive account credentials into ordinary Advisor conversation.
+
+### Savings accounting
+When a recurring charge actually stops, Budget can update future cash-flow projections and record verified or projected savings with clear labeling. Freed recurring cash should then flow through the household's active allocation rules rather than silently becoming unplanned spending.
+
+### Product principle
+Recurring expenses should be treated as continuing household decisions. Grandfather's role is to make those decisions visible, intentional and easy to revisit—and eventually, where safely authorized, easier to execute.
