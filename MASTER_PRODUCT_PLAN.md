@@ -1988,3 +1988,62 @@ Lewis should use the same calendar model when briefing the household. Examples i
 
 ### Product principle
 The household should be able to see not only **how much money it has**, but **when money is expected to arrive, when it must leave, and what the resulting cash position looks like over time.**
+
+
+## 49. Discovery Decision 038 — Future Goals, Sinking Funds and Protected Savings Envelopes
+
+### Real life belongs in the forecast before money is spent
+Users should be able to tell Lewis about future plans in ordinary language—such as a trip, major purchase, holiday expense, home repair or other goal—and have Budget create a planned financial event/goal before any transaction occurs.
+
+Example intent:
+'Kelly and I are going to Memphis November 14–16. Set aside about $600.'
+
+Lewis should translate that into a proposed structured goal with dates, target amount and funding plan, confirm material assumptions, place it on the household financial calendar and incorporate it into forecasts/safe-to-spend calculations.
+
+### Long-range goal planning
+Goals may extend months or a year+ into the future. Budget should calculate realistic periodic contributions based on target amount/date and household cash-flow cadence, then recalculate as actual contributions or household conditions change.
+
+### Sinking funds / virtual envelopes
+Budget should support protected goal-specific balances such as:
+- Vacation;
+- Christmas/holidays;
+- vehicle/home repair;
+- major purchase;
+- annual/irregular bill;
+- other household-defined goals.
+
+These are **not the same thing as the emergency/resilience reserve**, even if the money is physically held in the same savings account.
+
+### Physical account vs virtual purpose
+Budget's model must separate:
+1. where money physically resides (checking/savings account), from
+2. what that money is reserved for (emergency reserve, vacation fund, other sinking fund).
+
+A single physical savings account may therefore contain multiple protected virtual envelopes. The sum of virtual allocations must reconcile against the actual account balance, with discrepancies visible rather than hidden.
+
+### Move goal money out of spendable cash
+The household should have the option to physically transfer goal contributions into savings so the money is less likely to be accidentally spent. Early/local versions may calculate and instruct the transfer; future authorized money movement remains subject to the existing security/approval/action-layer requirements.
+
+Once money is allocated to a protected goal envelope, it should generally be excluded from ordinary True Available Cash unless the household explicitly reallocates it.
+
+### Goal funding scenarios
+Lewis should be able to model alternatives such as:
+- fixed amount each paycheck;
+- amount required to hit target date;
+- delayed/accelerated target;
+- partial funding now plus future freed cash;
+- using a future bonus/windfall where appropriately confidence-weighted;
+- adjusting the goal amount;
+- combining current savings with future contributions.
+
+### Conflict awareness
+If a goal contribution would create a cash squeeze, undermine required obligations, violate reserve rules or materially delay a higher-priority plan, Lewis should explain the conflict and offer alternative timing/funding scenarios rather than silently treating every goal as affordable.
+
+### Calendar integration
+Future goals and their planned funding events should appear in the same Household Financial Calendar as income and obligations, with clear distinction between planned discretionary goals and required bills.
+
+### Goal completion
+When a goal is fully funded, Budget should clearly show that the money is ready and protected for that purpose. Spending against the goal should reduce the envelope without being misinterpreted as unplanned overspending, while the underlying bank transactions remain authoritative.
+
+### Product principle
+Budget should help households **make future life visible in today's money**. Saving for something should feel intentional and protected without confusing goal savings with emergency resilience or everyday available cash.
