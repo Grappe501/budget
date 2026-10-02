@@ -1,6 +1,6 @@
 # Budget — Master Product Discovery & Build Plan
 
-**Status:** Discovery in progress  
+**Status:** Phase 0 Discovery complete; Phase 1 Product Specification complete  
 **Repository:** Grappe501/budget  
 **Canonical branch:** main  
 **Started:** October 2, 2026
@@ -184,11 +184,15 @@ The master plan will evolve as decisions are made.
 - Netlify deployment: deferred during initial build.
 - Cursor: expected implementation environment after the master design is mature.
 
-## 8. Open Discovery Queue
+## 8. Discovery Closure and Phase 1 Supersession
 
-The following domains must be resolved through the one-question-at-a-time process:
+The original open-discovery queue is superseded by the 51 completed discovery decisions and the accepted Alpha Definition of Alive.
 
-Household model; financial accounts; income; budget philosophy; transaction ingestion; categorization; bills; debt; savings; goals; subscriptions; cash flow; credit cards; reimbursements; irregular expenses; taxes; assets; net worth; forecasting; alerts; AI assistant; document/receipt handling; permissions; privacy; backups; financial-data connectivity; payment automation; mobile needs; reports; exports; commercial onboarding; pricing/product boundaries.
+**Phase 0 Product Discovery is closed.** New product ideas are backlog/change-control inputs unless they reveal a material missing Alpha requirement.
+
+**Phase 1 Product Specification is canonical in `PHASE_1_PRODUCT_SPECIFICATION.md`.** It converts discovery into the Alpha information architecture, screens, workflows, logical domain model, calculation contracts, Lewis behavior, governance rules, deferred scope, and acceptance gates.
+
+The next active phase is **Phase 2 — Technical Blueprint**.
 
 ## 9. Immediate Discovery Question
 
@@ -2650,3 +2654,14 @@ The next work sequence is:
 
 ### Product principle
 **Build the smallest version that can tell the truth about the household and help it make a better decision today. Then compound intelligence from there.**
+
+
+## 63. Phase 1 Product Specification — Complete
+
+Phase 1 has converted the completed discovery record into the implementation-grade product contract at `PHASE_1_PRODUCT_SPECIFICATION.md`.
+
+It establishes the Alpha information architecture, core workflows, screen inventory, logical financial domain objects, deterministic calculation/explainability contracts, Lewis boundaries, household governance, ten Alpha acceptance gates, explicit deferred scope, and preserved roadmap contracts.
+
+**Phase 1 status: COMPLETE.**
+
+The active next phase is **Phase 2 — Technical Blueprint**, which must make explicit architecture, storage, security, AI-boundary, testing and migration decisions before implementation begins.
