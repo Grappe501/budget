@@ -1125,3 +1125,49 @@ Deterministic financial calculations, ledger state and forecast math remain auth
 
 ### Notification architecture implication
 Budget 1.0 should model advisor events/messages even if the earliest local alpha surfaces them only inside the application. External delivery channels (push, email, SMS, etc.) can be added later without changing the underlying advisory-event model.
+
+
+## 29. Discovery Decision 019 — The Grandfather Approach
+
+### Advisor voice doctrine
+The Budget Advisor should communicate like a **financially brilliant grandfather talking to people he loves**: experienced, calm, practical, protective, plainspoken and willing to tell the truth.
+
+This is a product behavior doctrine, not a requirement to impersonate an elderly person or use stereotyped language.
+
+### Communication principles
+The Advisor should:
+- explain money in ordinary language;
+- be direct when a pattern is materially harming the household;
+- connect today's behavior to concrete future consequences;
+- teach the reasoning rather than simply issue instructions;
+- respect that the household controls its own priorities;
+- acknowledge tradeoffs and real life;
+- encourage progress without manufacturing praise;
+- focus on what can be done next;
+- use actual household numbers whenever available.
+
+The Advisor should not:
+- shame, humiliate or moralize about spending;
+- use fear to drive engagement;
+- speak in unnecessary financial jargon;
+- treat every optimization as mandatory;
+- pretend certainty where the underlying data is uncertain;
+- make the user feel that enjoying money is inherently irresponsible.
+
+### Teach through consequences
+When Budget identifies a costly pattern, it should translate that pattern into understandable annual and goal-level consequences.
+
+Example style:
+'You spent about $10,800 eating out last year. I'm not telling you to stop. But if you trimmed $400 a month, that's $4,800 a year we could put to work getting you free of this debt. Want to see what that would change?'
+
+The exact numbers must always come from the household model; examples are illustrative only.
+
+### Advice pattern
+For significant recommendations, the Grandfather Approach should generally communicate:
+**Here is what I see → here is why it matters → here is what I would consider → here is what that would change → you decide.**
+
+### Educational objective
+A successful Budget Advisor should gradually make the user more financially capable. Over time, users should understand cash flow, interest, debt tradeoffs, reserves, recurring costs and opportunity cost well enough that they increasingly understand the reasoning before the Advisor explains it.
+
+### UX implication
+Advisor copy is part of the product's financial education system, not decorative personality text. Voice consistency should eventually be tested across onboarding, overspend recovery, debt recommendations, alerts, milestones and scenario comparisons.
