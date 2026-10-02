@@ -1,6 +1,6 @@
 # Budget — Master Product Discovery & Build Plan
 
-**Status:** Phase 0 Discovery complete; Phase 1 Product Specification complete  
+**Status:** Phase 0 Discovery complete; Phase 1 Product Specification complete; Phase 2 Technical Blueprint complete  
 **Repository:** Grappe501/budget  
 **Canonical branch:** main  
 **Started:** October 2, 2026
@@ -2665,3 +2665,16 @@ It establishes the Alpha information architecture, core workflows, screen invent
 **Phase 1 status: COMPLETE.**
 
 The active next phase is **Phase 2 — Technical Blueprint**, which must make explicit architecture, storage, security, AI-boundary, testing and migration decisions before implementation begins.
+
+
+## 64. Phase 2 Technical Blueprint — Complete
+
+Phase 2 is canonical in `PHASE_2_TECHNICAL_BLUEPRINT.md`.
+
+The architecture baseline selects a local-first Next.js/React/TypeScript application, PostgreSQL + Prisma, Docker-based local database operation, integer-cent money handling, adapter-based CSV ingestion, deterministic classification/recurrence/forecast/TAC engines, explicit reconciliation and audit services, a server-only structured Lewis/OpenAI gateway, local sensitive-data controls, backup/restore gates, Vitest/Playwright testing, and household-scoped data architecture designed to migrate toward a commercial multi-household service without rewriting the financial domain.
+
+The central boundary is: **the financial engine must remain trustworthy without Lewis; Lewis makes the trustworthy engine understandable, proactive and useful.**
+
+**Phase 2 status: COMPLETE.**
+
+The active next phase is **Phase 3 — Cursor Build Plan**. Phase 3 must convert the product specification and technical blueprint into large ordered implementation passes with explicit validation, safety gates, and operator review checkpoints before real household financial data is introduced.
