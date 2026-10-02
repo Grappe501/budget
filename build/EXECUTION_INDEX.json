@@ -25,5 +25,9 @@
   "canonical_execution_package": "CURSOR_15_PASS_EXECUTION_PACKAGE.md",
   "scripts_directory": "cursor_passes",
   "manifests_directory": "build/manifests",
-  "construction_freeze": true
+  "construction_freeze": true,
+  "real_data_handoff_protocol": "REAL_DATA_HANDOFF_PROTOCOL.md",
+  "real_data_gate_behavior": "P11_GREEN_THEN_OPERATOR_CONFIRMATIONS_AND_LOCAL_CSV_REQUEST_THEN_P12_AUTO_RESUME",
+  "authorization_scope": "LOCAL_MACHINE_ONLY_NOT_INHERITED_BY_GIT_CLONE",
+  "single_launch_through_alpha": true
 }
