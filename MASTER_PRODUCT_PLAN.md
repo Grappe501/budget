@@ -1,6 +1,6 @@
 # Budget — Master Product Discovery & Build Plan
 
-**Status:** Phases 0–3 complete; pre-construction forensic hardening complete; ready for Phase 4 Household Alpha construction  
+**Status:** Phases 0–3 complete; Level 10 autonomous pre-construction hardening complete; ready for controlled Phase 4 construction  
 **Repository:** Grappe501/budget  
 **Canonical branch:** main  
 **Started:** October 2, 2026
@@ -2716,3 +2716,22 @@ The 15 construction passes remain, but each now extends the same vertical archit
 Hardened build north star: **One financial truth. One dependency spine. Many views. No hidden rewiring later.**
 
 Phase 4 may begin with Pass 0 only.
+
+
+## 67. Level 10 Autonomous Construction Hardening — Complete
+
+A second, substantially deeper forensic audit is canonical in `LEVEL_10_AUTONOMOUS_CONSTRUCTION_HARDENING.md`.
+
+This pass treats the construction process itself as a system that must be architected, validated and made increasingly autonomous. It adds a Budget Construction Control Plane alongside the Budget Product.
+
+The audit identified 100 deeper gaps/control requirements beyond the first hardening pass, including machine-readable architecture/invariant/entity/command/query/event/calculation/state/permission/capability/route/environment registries; bounded slice manifests; architecture drift detection; invariant-to-test traceability; durable transactional outbox processing; task/retry semantics; coherent Financial Snapshot generations; causal data lineage; field-level fact authority/provenance; transaction relationship/split foundations; BalanceObservation semantics; HouseholdPolicy aggregation; stale-state/freshness detection; Golden Household 2.0 scenario families; calculation vectors; import torture corpus; adversarial multi-household isolation; failure injection; AI eval/prompt/cost/cache/injection controls; feature capabilities; authorization abstraction; health/safe-mode; destructive-command interlocks; migration/rollback checkpoints; generated handoffs; autonomous repair boundaries; evidence bundles; and automatic next-slice generation.
+
+The most important crash-safety upgrade is the **transactional outbox**: authoritative domain mutations, required audit events and downstream-change events commit atomically. Derived recomputation is idempotent/retryable and cannot be silently lost if the process fails after a financial change.
+
+By the end of Pass 2, the target is for a new Cursor thread to be able to read generated current state, select only a READY authorized slice, build within allowed paths, run architecture/invariant/Golden Household/security gates, repair only within bounded authority, generate an evidence bundle, update build state if green, generate the next slice, and automatically stop at operator gates.
+
+The human roadmap remains Pass 0–14, but machine-level sub-slices may be generated within each pass for safe autonomous execution.
+
+**Level 10 pre-construction hardening status: COMPLETE.**
+
+North star: **Budget should not merely be built correctly. It should continuously prove that it is still being built correctly.**
