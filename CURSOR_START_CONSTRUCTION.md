@@ -30,7 +30,8 @@ Read these files in this order:
 8. `PHASE_3_CURSOR_BUILD_PLAN.md`
 9. `PHASE_2_TECHNICAL_BLUEPRINT.md`
 10. `PHASE_1_PRODUCT_SPECIFICATION.md`
-11. `MASTER_PRODUCT_PLAN.md`
+11. `REAL_DATA_HANDOFF_PROTOCOL.md`
+12. `MASTER_PRODUCT_PLAN.md`
 
 Then inspect `build/build_state.json`, `build/next_slice.json`, and generated handoff/state artifacts if they exist.
 
@@ -77,15 +78,13 @@ Never bypass a failed gate by editing build state manually.
 
 P00 through P11 must use synthetic/non-sensitive data only.
 
-After P11 is GREEN:
+After P11 is GREEN, activate `REAL_DATA_HANDOFF_PROTOCOL.md`.
 
-**STOP. DO NOT BEGIN P12.**
+**PAUSE CONSTRUCTION AND INTERACT WITH THE OPERATOR.** Present the P11 readiness checkpoint, request the five required security/authorization confirmations, and then request the CSV using the exact local-only workflow in that protocol.
 
-Set/report the appropriate operator-gate state and wait for explicit operator authorization to use real Steve/Kelly household financial data.
+Cursor cannot authorize the real-data gate itself. The operator must explicitly authorize it.
 
-Cursor cannot authorize this gate itself.
-
-After the operator explicitly authorizes P12, continue according to the existing P12–P14 manifests.
+Once the protocol's confirmations are satisfied and the CSV is selected/staged locally, P12 becomes authorized. Continue P12 → P13 → P14 automatically when each pass is GREEN. No new construction prompt is required.
 
 ## 6. Universal prohibitions
 
@@ -162,7 +161,7 @@ On the first local run, execute **P00 — Build Factory Bootstrap**.
 
 If P00 becomes GREEN, continue automatically into P01 and subsequent GREEN-authorized passes under this file's rules.
 
-The first mandatory human stop is P11's real-data authorization gate unless an earlier stop condition occurs.
+The first mandatory human interaction is P11's real-data handoff checkpoint unless an earlier stop condition occurs. Follow REAL_DATA_HANDOFF_PROTOCOL.md, request the CSV locally, then resume P12–P14 automatically after authorization.
 
 ## Final instruction
 
