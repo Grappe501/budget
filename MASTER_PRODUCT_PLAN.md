@@ -1329,3 +1329,39 @@ The household should not need to navigate accounting forms for routine correctio
 
 ### Mobile architecture implication
 Although the first development environment is local/desktop-oriented, Budget 1.0 architecture and interaction design should anticipate a phone-friendly companion experience. Voice capture must be treated as an input channel into the same underlying financial domain model, not as a separate ledger.
+
+
+## 34. Discovery Decision 024 — Teach Budget Once: Household Financial Memory
+
+### Core learning principle
+Budget should **learn from confirmed household corrections** so users do not repeatedly categorize or explain the same financial activity.
+
+When a user identifies a merchant, payee, recurring transaction or descriptor and indicates that the interpretation should apply in the future, Budget should create/update a household-specific classification rule.
+
+### Merchant fingerprinting
+Bank transaction descriptions often contain unstable text such as store numbers, terminal/reference IDs, dates or other changing suffixes. Matching should therefore support a normalized **merchant fingerprint** rather than relying only on exact raw-string equality.
+
+The system should preserve the original descriptor while deriving stable matching features for future classification.
+
+### Learned-rule examples
+Household rules may eventually capture facts such as:
+- normalized merchant/payee identity;
+- default category/subcategory;
+- whether the transaction is household, individual, business-related or reimbursable;
+- likely recurring obligation identity;
+- default attribution where appropriate;
+- known transfer/payment relationships;
+- user-confirmed descriptor aliases.
+
+### Confidence and exception handling
+A learned rule should apply automatically when the new transaction sufficiently matches the confirmed pattern. If important characteristics differ materially—such as an unusual amount, conflicting descriptor, different account context or ambiguous match—Budget may flag the transaction rather than blindly applying the rule.
+
+### User control
+Users should be able to inspect, correct and remove learned household rules. A correction to one transaction should not necessarily rewrite all history unless the user explicitly chooses a bulk/history correction.
+
+### Cost implication
+Household financial memory is also part of the low-AI-cost strategy. Once a transaction pattern has been reliably learned, routine future matches should generally use deterministic/local matching rather than purchasing another AI inference for the same problem.
+
+### Long-term experience target
+As the household uses Budget, the amount of manual categorization should fall substantially. The desired trajectory is:
+**first import requires meaningful review → Budget learns corrections → future imports need fewer confirmations → routine household activity becomes largely self-organizing while anomalies still receive attention.**
